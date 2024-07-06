@@ -10,18 +10,20 @@
   <meta property="og:url" content="" />
   <meta property="og:image" content="{% static 'images/min-logo.png' %}" />
   <meta property="og:title" content="بيت الخبراء الموحد" />
-  <meta property="og:description" content="لقد اجتمعنا في هذا البيت 
-    من كل مكان
-    لنعطي من خبراتنا و معرفتنا كل من يريد معلومة 
-    او يبحث عن متخصص في احدى المجالات ولديه
-    الخبرة من ارض الواقع في العديد من التخصصات
-    المالية و الادارية و الانشطة التجارية المختلفة." />
-  <meta name="description" content="لقد اجتمعنا في هذا البيت 
-    من كل مكان
-    لنعطي من خبراتنا و معرفتنا كل من يريد معلومة 
-    او يبحث عن متخصص في احدى المجالات ولديه
-    الخبرة من ارض الواقع في العديد من التخصصات
-    المالية و الادارية و الانشطة التجارية المختلفة." />
+  <meta property="og:description"
+  content="لقد اجتمعنا في هذا البيت
+  من كل مكان
+  لنعطي من خبراتنا و معرفتنا كل من يريد معلومة
+  او يبحث عن متخصص في احدى المجالات ولديه
+  الخبرة من ارض الواقع في العديد من التخصصات
+  المالية و الادارية و الانشطة التجارية المختلفة." />
+<meta name="description"
+  content="لقد اجتمعنا في هذا البيت
+  من كل مكان
+  لنعطي من خبراتنا و معرفتنا كل من يريد معلومة
+  او يبحث عن متخصص في احدى المجالات ولديه
+  الخبرة من ارض الواقع في العديد من التخصصات
+  المالية و الادارية و الانشطة التجارية المختلفة." />
   <meta property="og:author" content="" />
   <meta property="og:category" content="" />
   <meta property="og:publisher" content="" />
@@ -34,25 +36,22 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
 
-  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
-  
+
   <link href="{% static 'css/swiper-bundle.css' %}" rel="stylesheet" />
   <!-- Swiper slider CSS -->
   <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
-  
+
   <link href="{% static 'css/stylesRTL.css' %}" rel="stylesheet" />
   <style>
     html {
       scroll-behavior: smooth;
-    }
-    body {
-      padding-top: 78px;
     }
   </style>
 </head>
@@ -76,13 +75,24 @@
   <script src="{% static 'js/popper.min.js' %}"></script>
   <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
   <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="{% static 'js/Swiper.js' %}"></script>
   <script src="{% static 'js/swiperslider-bundle.min.js' %}"></script>
   <script src="{% static 'js/header.js' %}"></script>
 
+  <script>
+    AOS.init();
+      $(function() {
+      // run it only on home page
+
+      $(".preload").fadeOut(3000, function() {
+          $(".content-body").fadeIn(3000);
+      });
+    });
+  </script>
 
   {% block script %}
-    
+
   {% endblock script %}
 </body>
 
