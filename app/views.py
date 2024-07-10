@@ -92,9 +92,10 @@ def join_as_expert_form_view(request):
 
             messages.success(request, "تم حفظ بياناتك بنجاح")
             return redirect("join_as_officer")
-
-    messages.error(request, "يوجد خطآ برجاء اعادة المحاولة")
-    return redirect("join_as_officer")
+        else:
+            messages.error(request, "يوجد خطآ برجاء اعادة المحاولة")
+            return redirect("join_as_officer")
+    return redirect(reverse("join_as_officer"))
 
 
 def vocation_request_view(request):

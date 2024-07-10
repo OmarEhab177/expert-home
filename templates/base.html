@@ -1,10 +1,11 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="ar" name="language" />
   <meta property="og:image" content="{% static 'images/min-logo.png' %}" />
   <meta property="og:url" content="" />
@@ -53,6 +54,7 @@
     html {
       scroll-behavior: smooth;
     }
+    
   </style>
 </head>
 
@@ -72,13 +74,15 @@
   <!-- start footer -->
   {% include 'component/footer.html' %}
   <!-- end footer -->
-  <script src="{% static 'js/popper.min.js' %}"></script>
-  <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap.js' %}"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="{% static 'js/Swiper.js' %}"></script>
   <script src="{% static 'js/swiperslider-bundle.min.js' %}"></script>
   <script src="{% static 'js/header.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
 
   <script>
     AOS.init();

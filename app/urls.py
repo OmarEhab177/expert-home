@@ -24,8 +24,8 @@ urlpatterns = [
     path("services/", services_view, name="services"),
     path("action-aechanism/", action_aechanism_view, name="action_aechanism"),
     
-    path("join/", join_as_expert_view, name="join_as_officer"),
-    path("join-form/", join_as_expert_form_view, name="join_as_expert_form"),
+    path("join/", join_as_expert_view, name="join_as_expert_officer"),
+    path("join-form/", join_as_expert_form_view, name="join_as_expert_officer_form"),
     
     path("consultation-request/", vocation_request_view, name="consultation_request"),
     path("consultation-form/", vocation_request_form_view, name="consultation_form"),
