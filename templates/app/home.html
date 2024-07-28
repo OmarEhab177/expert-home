@@ -1,755 +1,382 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block head_title %}
-بيت الخبراء الموحد
-{% endblock head_title %}
 
 
 {% block content %}
 
-<div class="loading-new preload">
-  <div class="new-loading-content">
-    <div id="fountainTextG">
-      <div id="fountainTextG_1" class="fountainTextG">U</div>
-      <div id="fountainTextG_2" class="fountainTextG">N</div>
-      <div id="fountainTextG_3" class="fountainTextG">I</div>
-      <div id="fountainTextG_4" class="fountainTextG">T</div>
-      <div id="fountainTextG_5" class="fountainTextG">E</div>
-      <div id="fountainTextG_6" class="fountainTextG">D</div>
-      <div id="fountainTextG_7" class="fountainTextG"> </div>
-      <div id="fountainTextG_8" class="fountainTextG">H</div>
-      <div id="fountainTextG_9" class="fountainTextG">O</div>
-      <div id="fountainTextG_10" class="fountainTextG">U</div>
-      <div id="fountainTextG_11" class="fountainTextG">S</div>
-      <div id="fountainTextG_12" class="fountainTextG">E</div>
-      <div id="fountainTextG_13" class="fountainTextG"> </div>
-      <div id="fountainTextG_14" class="fountainTextG">O</div>
-      <div id="fountainTextG_15" class="fountainTextG">F</div>
-      <div id="fountainTextG_16" class="fountainTextG"> </div>
-      <div id="fountainTextG_17" class="fountainTextG">E</div>
-      <div id="fountainTextG_18" class="fountainTextG">X</div>
-      <div id="fountainTextG_19" class="fountainTextG">P</div>
-      <div id="fountainTextG_20" class="fountainTextG">E</div>
-      <div id="fountainTextG_21" class="fountainTextG">R</div>
-      <div id="fountainTextG_22" class="fountainTextG">T</div>
-      <div id="fountainTextG_23" class="fountainTextG">S</div>
-    </div>
-  </div>
-</div>
 
-<!-- start hero -->
-<div class="hero-sec">
-  {% if messages %}
-  <div class="custom-alert">
-    {% for message in messages %}
-    <div class="alert alert-{{ message.tags }} alert-dismissible fade show custom-alert-content" role="alert">
-      <p>{{ message }}</p>
-      <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button> -->
-    </div>
-    {% endfor %}
-  </div>
-  {% endif %}
-  <div class="container">
-    <div class="hero-sec-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-      <h4 itemprop="title" class="hero-title">
-        لقد اجتمعنا في هذا البيت
-        من كل مكان
-      </h4>
-      <h4 itemprop="title" class="hero-title-mobile">
-        بيت الخبراء الموحد
-      </h4>
-      <p itemprop="paragraph" class="hero-paragraph">
-        لنعطي من خبراتنا و معرفتنا كل من يريد معلومة
-        أو يبحث عن متخصص في إحدى المجالات ولديه
-        الخبرة من أرض الواقع في العديد من التخصصات
-        المالية و الإدارية و الأنشطة التجارية المختلفة.
-      </p>
-      <p itemprop="paragraph" class="hero-paragraph-mobile">
-        يأخذ معك رحلة التغيير من البداية
-      </p>
-      <div class="hero-btns d-flex" style="align-items: center;ustify-content: flex-start;gap: 1rem;">
-        <button type="button" class="about-us-btn" onclick="window.location.href='/about'">من نحن</button>
-        <button type="button" class="contact-us-btn" onclick="window.location.href='/consultation-request'">تواصل معنا
-        </button>
+
+  <header class="banner d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="content d-flex flex-column text-white">
+        <h2 class="content-title h1 fs-1 fw-semibold fw-lg-bold lh-base text-center w-50 mx-auto" data-aos="fade-down">
+          بيت الخبراء يفتح أبوابه ويأخذ معك رحلة التغيير من البداية</h2>
       </div>
     </div>
-  </div>
-</div>
-<!-- end hero -->
-
-<!-- start executive sec -->
-<div class="executive-sec py-4 mt-4">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;margin-top:3rem;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title text-right" itemprop="title">
-        كلمة الرئيس التنفيذي–المؤسس
-      </h4>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mb-3">
-        <div class="pt-4 " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-          <p class="executive-sec-description" itemprop="paragraph">
-            إن مبدأ الإستشارة في حياتنا هو نهج صحيح يجب أن نضعه من أولوياتنا لنضمن بمشيئة الله الإستقرار
-            و الاستمرار و النجاح لأعمالنا و منشاتنا.
-          </p>
-          <p class="executive-sec-description " itemprop="paragraph">
-            و لأن هذا المجال يكمن نجاحه في تحديد الأهداف بشكل صحيح فإن الوصول الى تحقيق هذه الأهداف
-            يعتمد على اتباع خطوات صحيحة و واضحة و مجربة و بالتالي نصنع منهجية سلسة و مرنة تؤدي بنا
-            الى تحقيق المستهدفات.
-          </p>
-          <p class="executive-sec-description " itemprop="paragraph">
-            و بناءاً عليه قمنا بتشييد”<span>بيت الخبراء الموحد</span>” ليجتمع قيه خبراءنا مع رواد الأعمال و أصحاب
-            المنشآت
-            و نمكنهم من الوصول الى أهدافهم من خلال خبير متخصص في مجالهم من واقع خبرة عملية ناجحة.
-          </p>
+  </header>
+  <section class="intro d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h2 class="color-primary fs-2 fw-semibold fw-lg-bold lh-base" data-aos="fade-down">لقد اجتمعنا في هذا البيت من
+          كل مكان</h2>
+        <p class="fs-4 fw-normal fw-lg-medium lh-base w-75 text-center" data-aos="fade-down">لنعطي من خبراتنا و
+          معرفتنا كل من يريد معلومة أو يبحث عن متخصص في إحدى المجالات ولديه الخبرة من أرض الواقع في العديد من التخصصات
+          المالية و الإدارية و الأنشطة التجارية المختلفة.</p>
+        <div class="buttons-group d-flex align-items-start gap-3" data-aos="fade-right">
+          <a href="{% url 'about' %}" class="btn circle-btn button-primary" type="button">من نحن</a>
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-light" type="button">تواصل معنا</a>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-3 text-center">
-        <a href="#" itemprop="like" target="_blank">
-          <img src="{% static 'images/home/executive.png' %}" alt="image" itemprop="image"
-            class="executive-sec-image" />
-        </a>
+    </div>
+  </section>
+  <section class="slogan bg-gray2">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+          src="{% static './imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
+        <h3 class="h3 mb-0 color-primary text-uppercase">بيت الخبراء الموحد</h3>
+      </div>
+      <div class="slogan-items g-3 justify-content-between d-flex flex-row flex-wrap">
+        <figure class="slogan-figure text-center shadow row flex-column align-items-center" data-aos="fade-right"><img
+            class="img-fluid slogan-img" src="{% static '/imgs/icons/deal.png' %}" alt="client">
+          <figcaption class="fs-4 fw-bold color-primary">
+            <h5>تعاون</h5>
+            <h5>Cooperation</h5>
+          </figcaption>
+        </figure>
+        <figure class="slogan-figure text-center shadow row flex-column align-items-center" data-aos="fade-up"><img
+            class="img-fluid slogan-img" src="{% static '/imgs/icons/content-strategy.png' %}" alt="client">
+          <figcaption class="fs-4 fw-bold color-primary">
+            <h5>إستراتيجية</h5>
+            <h5>Strategy</h5>
+          </figcaption>
+        </figure>
+        <figure class="slogan-figure text-center shadow row flex-column align-items-center" data-aos="fade-down"><img
+            class="img-fluid slogan-img" src="{% static '/imgs/icons/creativity.png' %}" alt="client">
+          <figcaption class="fs-4 fw-bold color-primary">
+            <h5>إبتكار</h5>
+            <h5>Innovation</h5>
+          </figcaption>
+        </figure>
+        <figure class="slogan-figure text-center shadow row flex-column align-items-center" data-aos="fade-left"><img
+            class="img-fluid slogan-img" src="{% static '/imgs/icons/growth.png' %}" alt="client">
+          <figcaption class="fs-4 fw-bold color-primary">
+            <h5>نجاح</h5>
+            <h5>Success</h5>
+          </figcaption>
+        </figure>
       </div>
     </div>
-  </div>
-</div>
-<!-- end executive sec -->
-<!-- start new category -->
-<div class="category-sec-new p-4" style="background: var(--main-color);">
-  <div class="conatiner">
-    <div class="row align-items-center justify-content-between category-cards" style="width:90%; margin:0 auto;">
-      <div class="cate-card text-center col-6 col-md-3 col-lg-3" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
-        <img src="{% static 'images/home/support.png' %}" alt="image" itemprop="image" />
-        <p class="category-titles" itemprop="title">تعاون</p>
-        <p class="category-titles" itemprop="title">
-          Cooperation
-        </p>
+  </section>
+  <section class="ceo">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+        src="{% static './imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
+        <h3 class="h3 mb-0 color-primary text-uppercase">كلمة الرئيس التنفيذي</h3>
       </div>
-      <div class="cate-card text-center col-6 col-md-3 col-lg-3" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
-        <img src="{% static 'images/home/seo-1.png' %}" alt="image" itemprop="image" />
-        <p class="category-titles" itemprop="title">استراتيجية</p>
-        <p class="category-titles" itemprop="title">
-          Strategy
-        </p>
-      </div>
-      <div class="cate-card text-center col-6 col-md-3 col-lg-3" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="4000">
-        <img src="{% static 'images/home/project-management.png' %}" alt="image" itemprop="image" />
-        <p class="category-titles" itemprop="title">ابتكار</p>
-        <p class="category-titles" itemprop="title">
-          Innovation
-        </p>
-      </div>
-      <div class="cate-card text-center col-6 col-md-3 col-lg-3" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="5000">
-        <img src="{% static 'images/home/success-1.png' %}" alt="image" itemprop="image" />
-        <p class="category-titles" itemprop="title">نجاح</p>
-        <p class="category-titles" itemprop="title">
-          Success
-        </p>
+      <div class="custom-row row justify-content-between">
+        <div class="col-12 col-lg-8">
+          <p class="ceo-word" data-aos="fade-right"><span>إن مبدأ الإستشارة في حياتنا هو نهج صحيح يجب أن نضعه من
+              أولوياتنا<span class='color-primary'> لنضمن بمشيئة الله الإستقرار و الاستمرار و النجاح لأعمالنا و
+                منشآتنا</span>. و لأن هذا المجال يكمن نجاحه في تحديد الأهداف بشكل صحيح فإن <span
+                class='color-primary'>الوصول الى تحقيق هذه الأهداف يعتمد على اتباع خطوات صحيحة و واضحة</span> و مجربة
+              و بالتالي نصنع منهجية سلسة و مرنة تؤدي بنا الى تحقيق المستهدفات. و بناءاً عليه قمنا بتشييد <span
+                class='color-primary fw-bold'>”بيت الخبراء الموحد”</span> ليجتمع فيه خبراءنا مع رواد الأعمال و أصحاب
+              المنشآت و نمكنهم من الوصول الى أهدافهم من خلال خبير متخصص في مجالهم من واقع خبرة عملية ناجحة</span></p>
+        </div>
+        <div class="col-12 col-lg-4"><a href="https://www.linkedin.com/in/rawad-zarea-"><img class="img-fluid img-ceo"
+              src="{% static '/imgs/background/executive.png' %}" alt="CEO" data-aos="zoom-in-left"></a></div>
       </div>
     </div>
-  </div>
-</div>
-<!-- end executive sec -->
-<!-- start home-executive sec-->
-<div class="home-executive bg-white ">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;margin-top:1rem;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title" itemprop="title">
-        في بيتنا خبير
-      </h4>
-    </div>
-    <div class="row py-4 mb-2">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-          <div class="card">
-            <img src="{% static 'images/home/home1.png' %}" class="card-img-top" alt="image" itemprop="image">
-            <div class="card-body">
-              <h5 class="card-title">التأسيس</h5>
-              <p class="card-text">
-                من خلال خبراتنا كمؤسسين لبيت الخبراء أصبح
-                لدينا الكثير من الأصدقاء و الزملاء و المعارف في
-                جميع المجالات و بالتالي مهما كان مشروعك أو
-                هدفك سنبحث لك في بيتنا ما يلبي احتياجاتك أو
-                قد نستضيف لمشروعك خصيصا من يدعم طلبك
-                و يلبي رغبتك.
-              </p>
+  </section>
+  <section class="who">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+        src="{% static './imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
+        <h3 class="h3 mb-0 color-primary text-uppercase">في بيتنا خبير</h3>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-4 cards-p">
+        <div class="col">
+          <div class="card h-100 shadow border-0" data-aos="flip-left"><img class="card-img-top"
+              src="{% static '/imgs/background/grid1.png' %}" alt="card image" height="269px">
+            <div class="card-body text-center card-content">
+              <h5 class="card-title color-primary fw-bold">التأسيس</h5>
+              <p class="card-text lh-lg">من خلال خبراتنا كمؤسسين لبيت الخبراء أصبح لدينا الكثير من الأصدقاء و الزملاء
+                و المعارف في جميع المجالات و بالتالي مهما كان مشروعك أو هدفك سنبحث لك في بيتنا ما يلبي احتياجاتك أو قد
+                نستضيف لمشروعك خصيصا من يدعم طلبك و يلبي رغبتك.<span class="d-inline-block color-primary"></span></p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-          <div class="card">
-            <img src="{% static 'images/home/home2.png' %}" class="card-img-top" alt="image" itemprop="image">
-            <div class="card-body">
-              <h5 class="card-title">الأهداف</h5>
-              <p class="card-text">
-                نحن نمنح خبراءنا الفرصة ليمارسوا شغفهم من
-                خلال المشاركة بخبراتهم ونمنح عملاءنا الجودة
-                و سرعة التنفيذ والنتيجة التي تحقق طموحاتهم
-                و أهدافهم دون تعقيدات و مقدمات.
-              </p>
+        <div class="col">
+          <div class="card h-100 shadow border-0" data-aos="flip-up"><img class="card-img-top"
+              src="{% static '/imgs/background/grid2.png' %}" alt="card image" height="269px">
+            <div class="card-body text-center card-content">
+              <h5 class="card-title color-primary fw-bold">الأهداف</h5>
+              <p class="card-text lh-lg">نحن نمنح خبراءنا الفرصة ليمارسوا شغفهم من خلال المشاركة بخبراتهم ونمنح
+                عملاءنا الجودة و سرعة التنفيذ والنتيجة التي تحقق طموحاتهم و أهدافهم دون تعقيدات و مقدمات.<span
+                  class="d-inline-block color-primary"></span></p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-          <div class="card">
-            <img src="{% static 'images/home/home3.png' %}" class="card-img-top" alt="image" itemprop="image">
-            <div class="card-body">
-              <h5 class="card-title">رؤيتنا</h5>
-              <p class="card-text">
-                هي المساهمة في صناعة مؤسسات وطنية تعمل
-                بمفهوم الاستدامة و الاستمرارية ,تساهم بشكل مباشر
-                في دعم ركائز الإقتصاد الوطني,من خلال تطبيق معايير
-                العمل المؤسسي و إعادة الهيكلية و وضع قواعد متينة
-                و بنية تحتية صلبة وذلك بتطبيق مجموعة من الخدمات
-                و البرامج التي تجعل المنشأة لديها بيئة عمل جيدة
-                و احترافية و خطة استراتيجية وهدف واحد و هو
-                “<span>الحوكمة و الاستدامة</span> “
-
-              </p>
+        <div class="col">
+          <div class="card h-100 shadow border-0" data-aos="flip-right"><img class="card-img-top"
+              src="{% static '/imgs/background/grid3.png' %}" alt="card image" height="269px">
+            <div class="card-body text-center card-content">
+              <h5 class="card-title color-primary fw-bold">رؤيتنا</h5>
+              <p class="card-text lh-lg">هي المساهمة في صناعة مؤسسات وطنية تعمل بمفهوم الاستدامة و الاستمرارية ,تساهم
+                بشكل مباشر في دعم ركائز الإقتصاد الوطني, من خلال تطبيق معايير العمل المؤسسي و إعادة الهيكلة و وضع
+                قواعد متينة و بنية تحتية صلبة وذلك بتطبيق مجموعة من الخدمات و البرامج التي تجعل المنشأة لديها بيئة عمل
+                جيدة و احترافية و خطة إستراتيجية وهدف واحد و هو<span class="d-inline-block color-primary">&quot;الحوكمة
+                  والاستدامة&quot;</span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- end home-executive sec-->
-<!-- start Experience -->
-<div class="Experience-sec py-4">
-  <div class="container-fluid custom-container">
-    <div class="pt-3">
-      <h4 class="Experience-sec-title" itemprop="title">
-        الخبرات
-      </h4>
-      <p class="Experience-sec-paragraph" itemprop="paragraph">
-        لقد عمل خبراءنا في مجالات مختلفة و قطاعات ريادية و سنستعرض هنا جهات
-        العمل التي إنضم اليها خبراءنا خلال مسيرتهم المهنية
-      </p>
+  </section>
+  <section class="exp bg-gray2 overflow-x-hidden">
+    <div class="exp-body text-center">
+      <h3 class="fs-bold h3 mb-0 color-primary text-uppercase">الخبرات</h3>
+      <p class="txt" data-aos="zoom-in-up">لقد عمل خبراءنا في مجالات مختلفة و قطاعات ريادية و سنستعرض هنا جهات العمل
+        التي إنضم اليها خبراءنا خلال مسيرتهم المهنية</p>
     </div>
-    <div class="mySwiper pt-lg-4 my-4 swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-94.png' %}" itemprop="image" alt="flutter"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-100.png' %}" itemprop="image" alt="aws"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-99.png' %}" itemprop="image" alt="mysql"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-97.png' %}" itemprop="image" alt="dot net"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-96.png' %}" itemprop="image" alt="vue"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-102.png' %}" itemprop="image" alt="flutter"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-104.png' %}" itemprop="image" alt="aws"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-89.png' %}" itemprop="image" alt="angular"
-            class="languahe-opacity-icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="{% static 'images/Experience/Asset-76.png' %}" itemprop="image" alt="dot net"
-            class="languahe-opacity-icon" />
-        </div>
+    <div class="clients position-relative overflow-hidden w-100" id="scrollableElement">
+      <div class="marquee d-flex justify-content-between"><img class="img-fluid client-img" id="marquee"
+          src=" {% static 'imgs/exprience_logos/Asset 94.png' %} " alt="client logo"><img class="img-fluid client-img"
+          id="marquee" src=" {% static 'imgs/exprience_logos/Asset 95.png' %} " alt="client logo"><img
+          class="img-fluid client-img" id="marquee" src=" {% static 'imgs/exprience_logos/Asset 96.png' %} "
+          alt="client logo"><img class="img-fluid client-img" id="marquee"
+          src=" {% static 'imgs/exprience_logos/Asset 97.png' %} " alt="client logo"><img class="img-fluid client-img"
+          id="marquee" src=" {% static 'imgs/exprience_logos/Asset 98.png' %} " alt="client logo"><img
+          class="img-fluid client-img" id="marquee" src=" {% static 'imgs/exprience_logos/Asset 99.png' %} "
+          alt="client logo"><img class="img-fluid client-img" id="marquee"
+          src=" {% static 'imgs/exprience_logos/Asset 100.png' %} " alt="client logo"><img class="img-fluid client-img"
+          id="marquee" src=" {% static 'imgs/exprience_logos/Asset 101.png' %} " alt="client logo"><img
+          class="img-fluid client-img" id="marquee" src=" {% static 'imgs/exprience_logos/Asset 102.png' %} "
+          alt="client logo">
       </div>
     </div>
-    <div class="text-center py-4">
-      <a href="{% url 'experience' %}" class="see-more-btn" style="text-decoration: none;">
-        مشاهدة المزيد
-      </a>
+    <div class="exp-btn text-center pt-4"><a class="exp-btn btn circle-btn button-primary"
+        href="{% url 'experience' %}">مشاهدة المزيد</a>
     </div>
-  </div>
-</div>
-<!-- end Experience -->
-<!-- start services -->
-<div class="services-sec py-4">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title" itemprop="title">
-        خدماتنا
-      </h4>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 my-3" style="text-align: start;">
-        <img src="{% static 'images/home/services1.png' %}" alt="image" itemprop="image" class="services-sec-image" />
+  </section>
+  <section class="services">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+        src="{% static './imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
+        <h3 class="h3 mb-0 color-primary text-uppercase">خدماتنا</h3>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 my-3" data-aos="fade-down" data-aos-easing="linear"
-        data-aos-duration="1500">
-        <h5 class="services-sec-title" itemprop="title">
-          صناعة قصص النجاح
-        </h5>
-        <p class="services-sec-description" itemprop="paragraph">
-          عندما تصادفك عقبة أو لديك فكرة و ربما تطمح لتطوير معين في قطاع ما أو على مستوى المنشأة
-          فان<span>
-            بيت الخبراء
-          </span> يفتح ابوابه لأي تطوير أو تغيير و يأخذ معك رحلة التغيير من البداية.
-        </p>
-        <p class="services-sec-description" itemprop="paragraph">
-          إن كل عميل لبيت الخبراء الموحد هو ضيف يأخذ حقه بالكامل من الإنصات و المناقشة حتى تتكون
-          الفكرة بالكامل.
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 my-3" data-aos="fade-down" data-aos-easing="linear"
-        data-aos-duration="1500">
-        <h5 class="services-sec-title" itemprop="title">
-          تحقيق الاستدامة
-        </h5>
-        <p class="services-sec-description" itemprop="paragraph">
-          و لأن نكون بيت كل منشأة ترغب في إعادة ترتيب أوراقها و تتجه نحو عمل مؤسسي منظم من خلال تطبيق
-          معايير الجودة و الحوكمة و التطوير الذي يتناسب مع التطلعات الوطنية و الدولية و التي تنقل المنشآت بمختلف
-          تصنيفها سواءاً الناشئة او المنشآت المتوسطة و الصغيرة لمستوى <span>أكثر استقراراً و ثباتاً</span>.
-        </p>
-
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 my-3" style="text-align: start;">
-        <img src="{% static 'images/home/services2.png' %}" alt="image" itemprop="image" class="services-sec-image" />
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end services -->
-<!-- start Specialties sec -->
-<div class="Specialties-sec py-4">
-  <div class="container-fluid custom-container">
-    <h4 class="Specialties-sec-title pt-4" itemprop="title">
-      التخصصات
-    </h4>
-    <div class="row" style="    margin: 4rem 0px;">
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-380.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            تطوير المنتجات
-          </p>
-        </div>
-      </div>
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-390.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            تطوير الاعمال
-          </p>
-        </div>
-      </div>
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-379.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            التطوير العقاري
-          </p>
-        </div>
-      </div>
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-389.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            المساهمات العقارية
-          </p>
-        </div>
-      </div>
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-378.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            ادارة الاملاك العقارية
-          </p>
-        </div>
-      </div>
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-388.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            التمويل و الصكوك الاسلامية
-          </p>
-        </div>
-      </div>
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-386.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            الالتزام و ادارة المخاطر
-          </p>
-        </div>
-      </div>
-      <div class="col col-md-3 col-lg-3 mb-3 text-center">
-        <div>
-          <img src="{% static 'images/Specialties/Asset-377.png' %}" alt="image" title="image" />
-          <p class="Specialties-sec-des" itemprop="paragraph">
-            الدراسات المالية
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="text-center py-4">
-      <a href="{% url 'services' %}" class="see-more-btn" style="text-decoration: none;">
-        مشاهدة المزيد
-      </a>
-    </div>
-  </div>
-</div>
-<!-- end Specialties sec -->
-<!-- start work -->
-<div class="work-sec py-4 bg-white d-none">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title" itemprop="title">
-        آلية العمل
-      </h4>
-    </div>
-    <div class="row " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 my-3">
-
-        <p class="services-sec-description" itemprop="paragraph">
-          سوف نستضيفك لنتعرف على بعضنا بشكل افضل و لنسمع منك ما يدور في راسك من طموحات,
-          و بناءا عليه سنقول لك ما نفكر فيه لنحقق هذه الطموحات وما هي افضل الممارسات.
-        </p>
-        <div class="row work-row">
-          <div class="col-6">
-            <ul>
-              <li>
-                <p>
-                  آلية تنفيذ الفكرة
-                </p>
-              </li>
-              <li>
-                <p>
-                  مدة التنفيذ و التكلفة
-                </p>
-              </li>
-              <li>
-                <p>
-                  ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>
-                <p>
-                  الخبير أو الفريق المناسب لهذه المهمة
-                </p>
-              </li>
-              <li>
-                <p>
-                  ماهي الخبرات التي تناسب مشروعك
-                </p>
-              </li>
-            </ul>
+      <div class="row justify-content-between mt-4 service-wrapper">
+        <div class="col-12 col-lg-4 text-center"><img class="img-fluid service-img"
+            src="{% static 'imgs/background/service1-2.png' %}" alt="service 1" data-aos="zoom-out-up"></div>
+        <div class="col-12 col-lg-8">
+          <div class="content" data-aos="zoom-in-left">
+            <h3 class="fs-bold h3 mb-0 color-primary text-uppercase">صناعة قصص النجاح</h3>
+            <p class="service-txt m-0 w-100"><span>عندما تصادفك عقبة أو لديك فكرة و ربما تطمح لتطوير معين في قطاع ما
+                أو على مستوى المنشأة فإن <span class='fw-bold'>بيت الخبراء</span> يفتح أبوابه لأي تطوير أو تغيير و
+                يأخذ معك رحلة التغيير من البداية. إن كل عميل لبيت الخبراء الموحد هو ضيف يأخذ حقه بالكامل من الإنصات و
+                المناقشة حتى تتكون الفكرة بالكامل.</span></p>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-3 text-center">
-        <img src="{% static 'images/home/work.png' %}" itemprop="image" alt="image" class="work-image w-100" />
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end work -->
-<!-- start new work sec -->
-<div class="new-work-sec py-4 bg-white">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title" itemprop="title">
-        آلية العمل
-      </h4>
-    </div>
-    <div>
-      <div>
-        <img src="{% static 'images/home/worknew.png' %}" alt="work-img" itemprop="image" class="w-100" />
-      </div>
-      <div class="py-4 my-3 text-center">
-        <div class="steps-container w-100">
-          <div class="steps">
-            <div class="steps-content">
-              <div class="steps__item z4">
-                1
-              </div>
-              <p>
-                آلية تنفيذ الفكرة
-              </p>
-            </div>
-            <div class="steps-content">
-              <div class="steps__item z3">
-                2
-              </div>
-              <p>
-                الخبير أو الفريق المناسب لهذه المهمة
-              </p>
-            </div>
-            <div class="steps-content">
-              <div class="steps__item z2">
-                3
-              </div>
-              <p>
-                مدة التنفيذ و التكلفة
-              </p>
-            </div>
-            <div class="steps-content">
-              <div class="steps__item z1">
-                4
-              </div>
-              <p>
-                ماهي الخبرات التي تناسب مشروعك
-              </p>
-            </div>
-            <div class="steps-content">
-              <div class="steps__item z4">
-                5
-              </div>
-              <p>
-                ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل
-              </p>
-            </div>
-
-
-
+      <div class="row flex-row-reverse justify-content-between mt-4">
+        <div class="col-12 col-lg-4 text-center"><img class="img-fluid service-img"
+            src="{% static 'imgs/background/service2-2.png' %}" alt="service 1" data-aos="zoom-out-down"></div>
+        <div class="col-12 col-lg-8">
+          <div class="content" data-aos="zoom-in-right">
+            <h3 class="fs-bold h3 mb-0 color-primary text-uppercase">تحقيق الاستدامة</h3>
+            <p class="service-txt m-0 w-100"><span>و لأن نكون بيت كل منشأة ترغب في إعادة ترتيب أوراقها و تتجه نحو عمل
+                مُؤَسسي منظم من خلال تطبيق معايير الجودة و الحوكمة و التطوير الذي يتناسب مع التطلعات الوطنية و الدولية
+                و التي تنقل المنشآت بمختلف تصنيفها سواءاً الناشئة أو المنشآت المتوسطة و الصغيرة لمستوى <span
+                  class='fw-bold'>أكثر استقراراً و ثباتاً.</span></span></p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-</div>
-<!--end new work sec  -->
-<!-- start mobile work steps -->
-<div class="new-work-mobile-sec py-4 bg-white">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title" itemprop="title">
-        آلية العمل
-      </h4>
-    </div>
-    <div>
-      <div>
-        <img src="{% static 'images/home/worknew.png' %}" alt="work-img" itemprop="image" class="w-100" />
+  </section>
+  <section class="works">
+    <div class="container">
+      <h3 class="fs-bold h3 mb-0 text-uppercase text-center text-white" data-aos="fade-down">التخصصات</h3>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 justify-content-between mt-4">
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset 1.svg' %}" alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">حوكمة مجالس الإدارة</figcaption>
+        </figure>
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset 2.svg' %}" alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">حوكمة الشركات الخاصة والعائلية</figcaption>
+        </figure>
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src=" {% static 'imgs/specialization_icons/Asset 3.svg' %} " alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">تطوير الأعمال والإستراتيجية</figcaption>
+        </figure>
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src=" {% static 'imgs/specialization_icons/Asset 4.svg' %} " alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">إستراتيجيات رأس المال البشري</figcaption>
+        </figure>
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src=" {% static 'imgs/specialization_icons/Asset 5.svg' %} " alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">إستقطاب وبناء الكفاءات البشرية</figcaption>
+        </figure>
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src=" {% static 'imgs/specialization_icons/Asset 6.svg' %} " alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">⁠الإستشارات القانونية</figcaption>
+        </figure>
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src=" {% static 'imgs/specialization_icons/Asset 7.svg' %} " alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">الأبحاث وإستراتيجيات التسويق</figcaption>
+        </figure>
+        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
+            src=" {% static 'imgs/specialization_icons/Asset 8.svg' %} " alt="asset" width="85" height="85">
+          <figcaption class="lh-base fs-5 text-white">التمويل والصكوك الإسلامية</figcaption>
+        </figure>
       </div>
-      <ol class="list-group vertical-steps">
-        <li class="list-group-item">
-          <span>
-            آلية تنفيذ الفكرة
-          </span>
+      <div class="exp-btn text-center pt-4"><a class="works-btn btn circle-btn button-light"
+          href="{% url 'services' %}">مشاهدة المزيد</a></div>
+    </div>
+  </section>
+  <section class="how-work">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
+        <h3 class="h3 mb-0 color-primary text-uppercase">آلية العمل</h3>
+      </div>
+      <p class="service-txt m-0 w-75 mx-auto text-center pt-0"><span>سوف نستضيفك لنتعرف على بعضنا بشكل افضل و لنسمع
+          منك ما يدور في رأسك من طموحات و بناءا عليه سنقول لك ما نفكر فيه لنحقق هذه الطموحات وما هي افضل
+          الممارسات.</span></p>
+      <ul class="timeline">
+        <li class="timeline" data-aos="fade-right">
+          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-1"></div>
+          <details class="panel">
+            <summary>آلية تنفيذ الفكرة</summary>
+          </details>
         </li>
-        <li class="list-group-item">
-          <span>
-            الخبير أو الفريق المناسب لهذه المهمة
-          </span>
+        <li class="timeline" data-aos="fade-left">
+          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-2"></div>
+          <details class="panel">
+            <summary>الخبير أو الفريق المناسب لهذه المهمة</summary>
+          </details>
         </li>
-        <li class="list-group-item">
-          <span>
-            مدة التنفيذ و التكلفة
-          </span>
+        <li class="timeline" data-aos="fade-right">
+          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-3"></div>
+          <details class="panel">
+            <summary>ماهي الخبرات التي تناسب مشروعك</summary>
+          </details>
         </li>
-        <li class="list-group-item">
-          <span>
-            ماهي الخبرات التي تناسب مشروعك
-          </span>
+        <li class="timeline" data-aos="fade-left">
+          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-4"></div>
+          <details class="panel">
+            <summary>مدة التنفيذ و التكلفة</summary>
+          </details>
         </li>
-        <li class="list-group-item">
-          <span>
-            ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل
-          </span>
+        <li class="timeline" data-aos="fade-right">
+          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-5"></div>
+          <details class="panel">
+            <summary>ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل</summary>
+          </details>
         </li>
-      </ol>
+      </ul>
     </div>
-  </div>
-</div>
-<!-- end mobile work steps -->
-<!-- start supervisor -->
-<div class="supervisor-sec py-4">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center" style="padding: 20px 0px; gap: 10px;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px; height: 24px;" />
-      <h4 class="section-title" itemprop="title">ابرز عملاءنا</h4>
-    </div>
-    <div class="slide-container swiper">
-      <div class="swiper-wrapper" style="height: fit-content;">
-        <div class="swiper-slide">
-          <div class="image-contents text-center card_content">
-            <div>
-              <img src="{% static 'images/Experience/Asset-107.png' %}" alt="image" itemprop="image" class="image-supervisor" />
-              <p class="slide-des" itemprop="description">شركة إمداد الغذائية</p>
-            </div>
-          </div>
+  </section>
+  <section class="our-clients">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+          src=" {% static 'imgs/icons/arrow-left-line.svg' %} " alt="arrow icon" />
+        <h3 class="h3 mb-0 color-primary text-uppercase">ابرز عملاءنا</h3>
+      </div>
+      <div class="slider-wrapper">
+        <div class="clients-slider owl-carousel owl-theme">
+          <figure class="slider-figure text-center item client-fig shadow d-flex flex-column align-items-center"><img
+              class="img-fluid client-logo" src="{% static 'imgs/logos/client1.svg' %}" alt="client">
+            <figcaption class="fs-5 fw-bold color-primary">شركة رقمنة الحلول للوساطة الرقمية</figcaption>
+          </figure>
+          <figure class="slider-figure text-center item client-fig shadow d-flex flex-column align-items-center"><img
+              class="img-fluid client-logo" src="{% static 'imgs/logos/client2.png' %}" alt="client">
+            <figcaption class="fs-5 fw-bold color-primary">بناء الاعمال الوطنية</figcaption>
+          </figure>
+          <figure class="slider-figure text-center item client-fig shadow d-flex flex-column align-items-center"><img
+              class="img-fluid client-logo" src="{% static 'imgs/logos/client3.png' %}" alt="client">
+            <figcaption class="fs-5 fw-bold color-primary">إمكان العربية</figcaption>
+          </figure>
+          <figure class="slider-figure text-center item client-fig shadow d-flex flex-column align-items-center"><img
+              class="img-fluid client-logo" src="{% static 'imgs/logos/client4.png' %}" alt="client">
+            <figcaption class="fs-5 fw-bold color-primary">إمداد الغذائية</figcaption>
+          </figure>
+          <figure class="slider-figure text-center item client-fig shadow d-flex flex-column align-items-center"><img
+              class="img-fluid client-logo" src="{% static 'imgs/logos/client5.png' %}" alt="client">
+            <figcaption class="fs-5 fw-bold color-primary">مدرسة الاوراق الخضراء</figcaption>
+          </figure>
         </div>
-        <div class="swiper-slide">
-          <div class="image-contents text-center card_content">
-            <div>
-              <img src="{% static 'images/Experience/Asset-89.png' %}" alt="image" itemprop="image" class="image-supervisor" />
-              <p class="slide-des" itemprop="description">شركة إمكان العربية</p>
-            </div>
-          </div>
+      </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <h3 class="h3 mb-0 text-white text-uppercase mb-4" data-aos="fade-down">بماذا نتميز ...؟</h3>
+      <div class="carousel slide" id="features-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button class="active" type="button" data-bs-target="#features-carousel" data-bs-slide-to="0"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#features-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
-        <div class="swiper-slide">
-          <div class="image-contents text-center card_content">
-            <div>
-              <img src="{% static 'images/Experience/Asset-108.png' %}" alt="image" itemprop="image" class="image-supervisor" />
-              <p class="slide-des" itemprop="description">شركة بناء الأعمال الوطنية</p>
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="fs-5 w-75 text-center text-white mx-auto lh-lg feature-text">إن الإنفراد الذي أضفناه في بيت
+              الخبراء الموحد هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفّك, و تابعنا العمل من مكانك لنتأكد من
+              جودة الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية و هل
+              يمكن تطبيقها فعلاً.</p>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="image-contents text-center  card_content">
-            <div>
-              <img src="{% static 'images/Experience/Asset-109.png' %}" alt="image" itemprop="image" class="image-supervisor" />
-              <p class="slide-des" itemprop="description">شركة قرضي الرقمية</p>
-            </div>
+          <div class="carousel-item">
+            <p class="fs-5 w-75 text-center text-white mx-auto lh-lg feature-text">إن التقارير الجميلة و البيانات
+              الطموحة تحتاج لمن يقرأها بعين الخبير و يتأكد فاعليتها. ولذلك خبرائنا يضعون حجر الأساس بعلمهم, يوثّقون
+              القواعد و الأركان بمعرفتهم و يراقبون البناء بخبراتهم. حتى يكن لدينا صرحاً من المعلومات يحمي أهدافنا.</p>
           </div>
         </div>
       </div>
-      <div class="swiper-button-next swiper-navBtn next_btn"></div>
-      <div class="swiper-button-prev swiper-navBtn prev_btn"></div>
     </div>
-  </div>
-</div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+        src="{% static './imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
+        <h3 class="h3 mb-0 color-primary text-uppercase">نحن معك دائماً</h3>
+      </div>
+      <div class="contact-form mt-4 shadow">
+        <div class="row row-cols-1 row-cols-lg-2 justify-content-between" data-aos="zoom-out">
+          <div class="img-wrapper d-none d-lg-block"></div>
+          <div class="form-wrapper">
+            <div class="content py-4">
+              <h3 class="text-center colot-primary">طلب إستشارة</h3>
+              <p class="text-center colot-primary lh-base"><span>شكراً على اهتمامك بـ<span class=fw-bold>"بيت الخبراء
+                    الموحد"!</span> تواصل معنا وشاركنا أسئلتك وإقتراحاتك وأفكارك، فتواصلك يسرّنا دوماً</span></p>
+            </div>
+            <form class="form row g-3" method="post" action="{% url 'home_consultation_form' %}">
+              {% csrf_token %}
+              <div class="col-12 col-lg-6">
+                <input name="first_name" required class="form-control" type="text" placeholder="الاسم الاول" aria-label="First name">
+              </div>
+              <div class="col-12 col-lg-6">
+                <input name="last_name" required class="form-control" type="text" placeholder="الاسم الاخير" aria-label="Last name">
+              </div>
+              <div class="col-12">
+                <input name="email" required class="form-control" type="email" placeholder="البريد الااكتروني">
+              </div>
+              <div class="col-12">
+                <input name="phone" class="form-control" type="tel" name="phone" placeholder="رقم الهاتف"
+                  required>
+              </div>
+              <div class="col-12">
+                <textarea name="message" required class="form-control" rows="5" placeholder="تفاصيل الاستشارة"></textarea>
+              </div>
+              <button class="btn mx-auto button-primary w-50 mt-4 submit-btn" type="submit">إرسال</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-
-<!-- end supervisor  -->
-<!-- start  features sec -->
-<div class="features-sec">
-  <div class="container-fluid p-0">
-    <div class="carousel-inner " style="background-image: url({% static 'images/home/features.png' %})">
-      <div class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center">
-        <h5 class="slider-features-title mb-1" itemprop="title">
-          بماذا نتميز ...؟
-        </h5>
-        <p class="slider-features-des" itemprop="description">
-          إن الانفراد الذي اضفناه في بيت الخبراء الموحد هي خدمة الاشراف الاستشاري لقد وضعنا انفسنا
-          في صفك, و تابعنا العمل من مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك
-          و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية و هل يمكن تطبيقها فعليا.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end  features sec -->
-<!-- start contact us -->
-<div class="contact-us-sec bg-white py-3" id="contact-us">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title" itemprop="title">
-        نحن معك دائما
-      </h4>
-    </div>
-    <div class="row"
-      style="border: 1px solid rgb(244, 255, 251);box-shadow: rgba(11, 114, 76, 0.47) 0px 0px 9px;border-radius: 10px; background: white; margin: 1rem auto;">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mb-3 py-4 text-center">
-        <h5 itemprop="title-contact" class="contact-title-sec">
-          طلب استشارة
-        </h5>
-        <p itemprop="des-contact" class="des-title-sec">
-          شكراً على اهتمامك بـ"<span>بيت الخبراء الموحد</span>"! تواصل معنا
-          وشاركنا أسئلتك واقتراحاتك وأفكارك، فتواصلك يسرّنا دوماً
-        </p>
-        <form method="post" action="{% url 'home_consultation_form' %}" class="form-sec pt-4">
-          {% csrf_token %}
-          <div class="row">
-            <div class="col-6">
-              <input type="text" name="first_name" required class="input-contact form-control"
-                placeholder="الاسم الاول" />
-            </div>
-            <div class="col-6">
-              <input type="text" name="last_name" required class="input-contact form-control"
-                placeholder="الاسم الاخير" />
-            </div>
-          </div>
-          <div>
-            <input type="email" name="email" required placeholder="البريد الالكتروني" class="input-contact form-control"
-              style="margin-bottom: 17px !important;" />
-            <input type="text" name="phone" required placeholder=" رقم الهاتف" class="input-contact form-control"
-              style="margin-bottom: 17px !important;" />
-            <textarea type="email" name="message" required placeholder=" تفاصيل الاستشارة"
-              class="textarea-contact form-control" style="margin-bottom: 17px !important;"></textarea>
-          </div>
-          <input type="hidden" name="next" value="{{ next }}">
-          <div class="text-center">
-            <button type="submit" class="submit-btn">ارسال</button>
-          </div>
-        </form>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0">
-        <img src="{% static 'images/home/contact.png' %}" alt="image" itemprop="image" />
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end contact us -->
 
 
 {% endblock content %}
 
-
-{% block script %}
-<script>
-  $(document).ready(function () {
-    setTimeout(function () {
-      $(".alert").alert('close');
-    }, 3000); // 3 seconds
-  });
-
-
-
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.swiper', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      rtl: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1220: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-      },
-    });
-  });
-
-</script>
-{% endblock script %}

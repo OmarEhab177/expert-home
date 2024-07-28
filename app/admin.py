@@ -14,9 +14,9 @@ admin.site.index_title = "لوحة التحكم"
 
 class CerificateInline(admin.TabularInline):
     model = Cerificate
-    extra = 0
+    extra = 1
     fields = ("attachment",)
-    readonly_fields = ["attachment"]
+    # readonly_fields = ["attachment"]
     can_delete = False
 
 
@@ -33,21 +33,21 @@ class ExpertAdmin(admin.ModelAdmin):
     list_per_page = 20
     ordering = ("-created_at",)
     date_hierarchy = "created_at"
-    readonly_fields = (
-        "name",
-        # "email",
-        # "phone",
-        "general_specialization",
-        "sum_experience_years",
-        "details_specialization_info",
-        "display_name_type",
-        "services",
-        "work_experiense_comapnies",
-        "study_qualifications",
-        "heigh_special_companies",
-        "extraInfo",
-        "created_at",
-    )
+    # readonly_fields = (
+    #     "name",
+    #     "email",
+    #     "phone",
+    #     "general_specialization",
+    #     "sum_experience_years",
+    #     "details_specialization_info",
+    #     "display_name_type",
+    #     "services",
+    #     "work_experiense_comapnies",
+    #     "study_qualifications",
+    #     "heigh_special_companies",
+    #     "extraInfo",
+    #     "created_at",
+    # )
     list_display_links = ("created_at", "name")
 
     inlines = [CerificateInline]

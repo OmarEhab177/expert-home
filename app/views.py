@@ -83,7 +83,7 @@ def join_as_expert_form_view(request):
             email.content_subtype = "html"
             email.send()
 
-            subject = f"تم استلام طلبك بنجاح"
+            subject = "UHX"
             context = {}
             email_body = render_to_string("component/join_email_for_user.html", context)
             email = EmailMessage(subject, email_body, from_email, [to_email])
@@ -91,11 +91,11 @@ def join_as_expert_form_view(request):
             email.send()
 
             messages.success(request, "تم حفظ بياناتك بنجاح")
-            return redirect("join_as_officer")
+            return redirect("join_as_expert_officer")
         else:
             messages.error(request, "يوجد خطآ برجاء اعادة المحاولة")
-            return redirect("join_as_officer")
-    return redirect(reverse("join_as_officer"))
+            return redirect("join_as_expert_officer")
+    return redirect(reverse("join_as_expert_officer"))
 
 
 def vocation_request_view(request):
@@ -104,7 +104,6 @@ def vocation_request_view(request):
 
 def vocation_request_form_view(request):
     if request.method == "POST":
-
         form = VocationForm(request.POST)
         if form.is_valid():
             form.save()
@@ -134,7 +133,7 @@ def vocation_request_form_view(request):
             email.content_subtype = "html"
             email.send()
 
-            subject = f"تم استلام طلبك بنجاح"
+            subject = "UHX"
             context = {}
             email_body = render_to_string("component/vocation_email_for_user.html", context)
             email = EmailMessage(subject, email_body, from_email, [to_email])
@@ -150,7 +149,6 @@ def vocation_request_form_view(request):
 
 def vocation_request_form_from_home_view(request):
     if request.method == "POST":
-
         form = VocationForm(request.POST)
         if form.is_valid():
             form.save()
@@ -181,7 +179,7 @@ def vocation_request_form_from_home_view(request):
             email.content_subtype = "html"
             email.send()
 
-            subject = f"تم استلام طلبك بنجاح"
+            subject = "UHX"
             context = {}
             email_body = render_to_string("component/vocation_email_for_user.html", context)
             email = EmailMessage(subject, email_body, from_email, [to_email])

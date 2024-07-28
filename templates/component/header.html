@@ -1,46 +1,51 @@
 {% load static %}
-<header class="fixed_header">
-  <nav class="navbar navbar-expand-lg navbar-bg py-2">
-    <a class="navbar-brand" href="{% url 'home' %}">
-      <img src="{% static 'images/main-logo.svg' %}" alt="images" itemprop="images" class="header_logo" />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 0px; ">
-      <img src="{% static 'images/home/bars.svg' %}" alt="icon" itemprop="image" />
-    </button>
+<nav class="navbar fixed-top navbar-expand-lg bg-primary">
+  <div class="container"><a class="navbar-brand brand" href="/"><img class="logo-dimension"
+        src="{% static '/imgs/logos/UHX-white.svg' %}" alt="uhx logo"></a>
+    <button
+      class="navbar-toggler collapsed position-relative d-flex d-lg-none flex-column justify-content-around icon-button"
+      type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="toggler-icon top-bar"></span><span class="toggler-icon mid-bar"></span><span
+        class="toggler-icon bottom-bar"></span></button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ">
-        <li class="nav-item active">
-          <a class="nav-link" href="{% url 'home' %}">الرئيسية</a>
+      <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0 gap-3">
+        <li class="nav-item"><a
+            class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
+            aria-current="page" href="{% url 'home' %}" data-toggle="collapse">الرئيسية</a></li>
+        <li class="nav-item"><a
+            class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
+            aria-current="page" href="{% url 'about' %}" data-toggle="collapse">من نحن</a></li>
+        <li class="nav-item"><a
+            class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
+            aria-current="page" href="{% url 'services' %}" data-toggle="collapse">خدماتنا</a></li>
+        <li class="nav-item"><a
+            class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
+            aria-current="page" href="{% url 'action_aechanism' %}" data-toggle="collapse">آلية العمل</a></li>
+        <li class="nav-item"><a
+            class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
+            aria-current="page" href="{% url 'experience' %}" data-toggle="collapse">الخبرات</a></li>
+        <li class="nav-item dropdown"><a
+            class="nav-link dropdown-toggle text-white fs-6 fw-normal text-uppercase text-center" href="#"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">نحن معك دائما</a>
+          <ul class="dropdown-menu bg-primary-dark py-0">
+            <li class="text-center"><a
+                class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect"
+                href="{% url 'consultation_request' %}">طلب استشارة</a></li>
+            <li class="text-center"><a
+                class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect"
+                href="{% url 'join_as_expert_officer' %}">انضم كخبير</a></li>
+            <li class="text-center"><a
+                class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect"
+                href="{% url 'licenses' %}">التراخيص</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'about' %}">من نحن</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'experience' %}"> الخبرات</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            خدماتنا
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <a class="dropdown-item" href="{% url 'services' %}">خدماتنا</a>
-            <a class="dropdown-item" href="{% url 'licenses' %}">التراخيص</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'action_aechanism' %}"> ألية العمل</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
-            نحن معك دائما
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-            <a class="dropdown-item" href="{% url 'consultation_request' %}">طلب استشارة</a>
-            <a class="dropdown-item" href="{% url 'join_as_expert_officer' %}">انضم كخبير</a>
-          </div>
-        </li>
+        <!-- <li class="nav-item mx-auto pb-3">
+          <button
+            class="download-btn btn rounded-button btn-primary d-flex align-items-center fs-6 gap-2 color-primary bg-white border-0"><img
+              src="{% static '/imgs/icons/download (1).png' %}" alt="download profile">الملف الشخصي</button>
+        </li> -->
       </ul>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>

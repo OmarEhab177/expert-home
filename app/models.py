@@ -1,8 +1,12 @@
 from django.db import models
+import random
+import string
 
 
 def handle_upload_files(instance, filename):
-    return f'{instance.expert.name}/{filename}'
+    characters = string.ascii_letters
+    random_string = ''.join(random.choice(characters) for _ in range(6))
+    return f'{instance.expert.name}/{random_string}-{filename}'
 
 
 class Expert(models.Model):
