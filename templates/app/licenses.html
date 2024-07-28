@@ -2,51 +2,39 @@
 {% load static %}
 
 {% block content %}
-<!-- start work bg sec -->
-<div class="workbg-sec">
-  <div class="container-fluid p-0">
-    <img src="{% static 'images/home/licensesbg.jpg' %}" alt="image" itemprop="image" class="workbg-image" />
-  </div>
-</div>
-<!-- end work bg sec -->
-<!-- start licenses  -->
-<div class="licenses-sec py-4 bg-white">
-  <div class="container-fluid custom-container">
-    <div class="d-flex justify-content-start align-items-center " style="padding: 20px 0px;gap: 10px;">
-      <img src="{% static 'images/home/arrow.svg' %}" itemprop="image" alt="icon" style="width: 24px;height: 24px;" />
-      <h4 class="section-title" itemprop="title">
-        التراخيص
-      </h4>
+<header class="banner banner-license d-flex justify-content-center align-items-center"></header>
+<main class="main-license license">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
+        src="{% static 'imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
+      <h3 class="h3 mb-0 color-primary text-uppercase">التراخيص</h3>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-3 text-center">
-        <div class="text-center">
-          <img src="{% static 'images/home/licenses3.png' %}" alt="image" itemprop="image" class="licence-image" />
-          <p itemprop="description" class="license-des">
-            استشارات مالية
-          </p>
+    <section class="license-content">
+      <div class="row g-4 justify-content-center">
+        <div class="col col-12 col-md-6 col-lg-3">
+          <figure class="shadow figure-license text-center h-100 py-3"><img class="img-fluid"
+              src="{% static 'imgs/licenses/license3.png' %}" alt="استشارات  مالية" width="350" height="250"
+              style="object-fit: contain">
+            <figcaption class="caption-license fw-bold color-primary w-100 mt-3">إستشارات مالية</figcaption>
+          </figure>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <figure class="shadow figure-license text-center h-100 py-3"><img class="img-fluid"
+              src="{% static 'imgs/licenses/license2.png' %}" alt="استشارات  الحوكمة و المخاطر و الالتزام " width="350" height="250"
+              style="object-fit: contain">
+            <figcaption class="caption-license fw-bold color-primary w-100 mt-3">إستشارات الحوكمة و المخاطر و الإلتزام
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <figure class="shadow figure-license text-center h-100 py-3"><img class="img-fluid"
+              src="{% static 'imgs/licenses/license1.png' %}" alt="استشارات  ادارية" width="350" height="250"
+              style="object-fit: contain">
+            <figcaption class="caption-license fw-bold color-primary w-100 mt-3">إستشارات إدارية</figcaption>
+          </figure>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-3 text-center">
-        <div class="text-center">
-          <img src="{% static 'images/home/licenses2.png' %}" alt="image" itemprop="image" class="licence-image" />
-          <p itemprop="description" class="license-des">
-            استشارات الحوكمة و المخاطر و الالتزام
-          </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-3 text-center">
-        <div class="text-center">
-          <img src="{% static 'images/home/licenses1.png' %}" alt="image" itemprop="image" class="licence-image" />
-          <p itemprop="description" class="license-des">
-
-            استشارات ادارية
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
-</div>
-<!-- end licenses  -->
-
+</main>
 {% endblock content %}

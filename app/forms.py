@@ -17,15 +17,15 @@ class ExpertForm(forms.ModelForm):
             "phone",
             "general_specialization",
             "sum_experience_years",
-            "details_specialization_info",
             "display_name_type",
-            "services",
+            "details_specialization_info",
             "work_experiense_comapnies",
+            "services",
             "study_qualifications",
             "heigh_special_companies",
             "extraInfo"
         )
-
+        
 
 
 
