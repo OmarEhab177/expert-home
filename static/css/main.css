@@ -531,13 +531,14 @@ p>span{
 .ceo .ceo-word{
     font-size:1.5rem;
     line-height:1.5;
-    padding-top:3rem
+    padding-top:3rem;
+    text-align: justify !important;
 }
 @media (min-width:992px){
     .ceo .ceo-word{
         font-size:1.2rem!important;
         padding-left:1rem;
-        padding-right:1rem
+        padding-right:1rem;
     }
 }
 .ceo .img-ceo{
