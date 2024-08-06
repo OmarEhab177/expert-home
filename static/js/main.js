@@ -1,12 +1,13 @@
 $(function () {
-    $(window).on('load', function () {
-        $('#loader').fadeOut('slow', function () {
-            $('body').removeClass('no-scroll');
-            setTimeout(() => {
-                $('#loader').addClass('hidden');
-            }, 1300);
-        });
-    });
+
+    // $(window).on('load', function () {
+    //     $('#loader').fadeOut('slow', function () {
+    //         $('body').removeClass('no-scroll');
+    //         setTimeout(() => {
+    //             $('#loader').addClass('hidden');
+    //         }, 1300);
+    //     });
+    // });
 
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 80) {
