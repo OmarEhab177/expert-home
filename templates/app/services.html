@@ -1,40 +1,79 @@
-{% extends "base.html" %}
-{% load static %}
-
-
-{% block content %}
-<header class="banner banner-service d-flex justify-content-center align-items-center"></header>
+{% extends "base.html" %} {% load static %} {% block content %}
+<header
+  class="banner banner-service d-flex justify-content-center align-items-center"
+></header>
 
 <main class="main-about">
   <section class="services">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
-          src="{% static 'imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
-        <h3 class="h3 mb-0 color-primary text-uppercase">خدماتنا</h3>
+      <div
+        class="d-flex align-items-center justify-content-center pb-4"
+        data-aos="fade-down"
+      >
+        <img
+          class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+          alt="arrow icon"
+        />
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+          خدماتنا
+        </h3>
       </div>
       <div class="row justify-content-between mt-4 service-wrapper">
-        <div class="col-12 col-lg-4 text-center"><img class="img-fluid service-img"
-            src="{% static 'imgs/background/service1-2.png' %}" alt="service 1" data-aos="zoom-out-up"></div>
+        <div class="col-12 col-lg-4 text-center">
+          <img
+            class="img-fluid service-img"
+            src="{% static 'imgs/background/service1-2.png' %}"
+            alt="service 1"
+            data-aos="zoom-out-up"
+          />
+        </div>
         <div class="col-12 col-lg-8">
           <div class="content" data-aos="zoom-in-left">
-            <h3 class="fs-bold h3 mb-0 color-primary text-uppercase">صناعة قصص النجاح</h3>
-            <p class="service-txt m-0 w-100"><span>عندما تصادفك عقبة أو لديك فكرة و ربما تطمح لتطوير معين في قطاع ما أو
-                على مستوى المنشأة فإن <span class='fw-bold'>بيت الخبراء</span> يفتح أبوابه لأي تطوير أو تغيير و يأخذ معك
-                رحلة التغيير من البداية. إن كل عميل لبيت الخبراء الموحد هو ضيف يأخذ حقه بالكامل من الإنصات و المناقشة
-                حتى تتكون الفكرة بالكامل.</span></p>
+            <h3
+              class="fs-bold h3 mb-0 color-primary text-uppercase custom-title2"
+            >
+              صناعة قصص النجاح
+            </h3>
+            <p class="service-txt m-0 w-100 custom-txt">
+              <span
+                >عندما تصادفك عقبة أو لديك فكرة و ربما تطمح لتطوير معين في قطاع
+                ما أو على مستوى المنشأة فإن
+                <span class="fw-bold">بيت الخبراء</span> يفتح أبوابه لأي تطوير
+                أو تغيير و يأخذ معك رحلة التغيير من البداية. إن كل عميل لبيت
+                الخبراء الموحد هو ضيف يأخذ حقه بالكامل من الإنصات و المناقشة حتى
+                تتكون الفكرة بالكامل.</span
+              >
+            </p>
           </div>
         </div>
       </div>
       <div class="row flex-row-reverse justify-content-between mt-4">
-        <div class="col-12 col-lg-4 text-center"><img class="img-fluid service-img"
-            src="{% static 'imgs/background/service2-2.png' %}" alt="service 1" data-aos="zoom-out-down"></div>
+        <div class="col-12 col-lg-4 text-center">
+          <img
+            class="img-fluid service-img"
+            src="{% static 'imgs/background/service2-2.png' %}"
+            alt="service 1"
+            data-aos="zoom-out-down"
+          />
+        </div>
         <div class="col-12 col-lg-8">
           <div class="content" data-aos="zoom-in-right">
-            <h3 class="fs-bold h3 mb-0 color-primary text-uppercase">تحقيق الاستدامة</h3>
-            <p class="service-txt m-0 w-100"><span>و لأن نكون بيت كل منشأة ترغب في إعادة ترتيب أوراقها و تتجه نحو عمل
-                مُؤَسسي منظم من خلال تطبيق معايير الجودة و الحوكمة و التطوير الذي يتناسب مع التطلعات الوطنية و الدولية و
-                التي تنقل المنشآت بمختلف تصنيفها سواءاً الناشئة أو المنشآت المتوسطة و الصغيرة لمستوى <span
-                  class='fw-bold'>أكثر استقراراً و ثباتاً.</span></span></p>
+            <h3
+              class="fs-bold h3 mb-0 color-primary text-uppercase custom-title2"
+            >
+              تحقيق الاستدامة
+            </h3>
+            <p class="service-txt m-0 w-100 custom-txt">
+              <span
+                >و لأن نكون بيت كل منشأة ترغب في إعادة ترتيب أوراقها و تتجه نحو
+                عمل مُؤَسسي منظم من خلال تطبيق معايير الجودة و الحوكمة و التطوير
+                الذي يتناسب مع التطلعات الوطنية و الدولية و التي تنقل المنشآت
+                بمختلف تصنيفها سواءاً الناشئة أو المنشآت المتوسطة و الصغيرة
+                لمستوى
+                <span class="fw-bold">أكثر استقراراً و ثباتاً.</span></span
+              >
+            </p>
           </div>
         </div>
       </div>
@@ -42,101 +81,296 @@
   </section>
   <section class="works">
     <div class="container">
-      <h3 class="fs-bold h3 mb-0 text-uppercase text-center text-white" data-aos="fade-down">التخصصات</h3>
-      <p class="py-3 fs-5 lh-base w-50 mx-auto text-white text-center">لقد عمل خبراءنا في مجالات مختلفة و قطاعات ريادية
-        و سنستعرض هنا جهات العمل التي انضم اليها خبراءنا خلال مسيرتهم المهنية</p>
-      <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 justify-content-center mt-4">
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-1.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">حوكمة مجالس الإدارة</figcaption>
+      <h3
+        class="fs-bold h3 mb-0 text-uppercase text-center text-white custom-title2"
+        data-aos="fade-down"
+      >
+        التخصصات
+      </h3>
+      <p
+        class="py-3 fs-5 lh-base w-50 mx-auto text-white text-center custom-txt"
+      >
+        لقد عمل خبراءنا في مجالات مختلفة و قطاعات ريادية و سنستعرض هنا جهات
+        العمل التي انضم اليها خبراءنا خلال مسيرتهم المهنية
+      </p>
+      <div
+        class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 justify-content-center mt-4"
+      >
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-1.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            حوكمة مجالس الإدارة
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-2.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">حوكمة الشركات الخاصة والعائلية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-2.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            حوكمة الشركات الخاصة والعائلية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-3.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">تطوير الأعمال والإستراتيجية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-3.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            تطوير الأعمال والإستراتيجية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-4.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">إستراتيجيات رأس المال البشري</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-4.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            إستراتيجيات رأس المال البشري
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-5.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">إستقطاب وبناء الكفاءات البشرية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-5.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            إستقطاب وبناء الكفاءات البشرية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-6.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">⁠الإستشارات القانونية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-6.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            ⁠الإستشارات القانونية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-7.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الأبحاث وإستراتيجيات التسويق</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-7.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الأبحاث وإستراتيجيات التسويق
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-8.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">التمويل والصكوك الاسلامية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-8.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            التمويل والصكوك الاسلامية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-9.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">التقنية المالية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-9.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            التقنية المالية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-10.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الإستعداد للإستثمار والجولات الإستثمارية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-10.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الإستعداد للإستثمار والجولات الإستثمارية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-11.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">المحاسبة والمالية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-11.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            المحاسبة والمالية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-12.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الإلتزام وإدارة المخاطر</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-12.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الإلتزام وإدارة المخاطر
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-13.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الترتيب والإدراج</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-13.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الترتيب والإدراج
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-14.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">المساهمات العقارية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-14.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            المساهمات العقارية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-15.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">إدارة الأملاك والتقييم</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-15.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            إدارة الأملاك والتقييم
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-16.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الجودة وتجربة العميل</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-16.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الجودة وتجربة العميل
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-17.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الضيافة والفندقة والسياحة</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-17.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الضيافة والفندقة والسياحة
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-18.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">التجارة الإلكترونية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-18.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            التجارة الإلكترونية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-19.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الهوية البصرية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-19.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الهوية البصرية
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-20.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">التعليم والتدريب</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-20.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            التعليم والتدريب
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-21.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">الفعاليات والمناسبات</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-21.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            الفعاليات والمناسبات
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-22.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">سلاسل الإمداد</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-22.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            سلاسل الإمداد
+          </figcaption>
         </figure>
-        <figure class="work-special text-center col" data-aos="zoom-in"><img class="img-fluid"
-            src="{% static 'imgs/specialization_icons/Asset-23.svg' %}" alt="asset" width="85" height="85">
-          <figcaption class="lh-base fs-5 text-white">⁠الشبكات والخدمات التقنية</figcaption>
+        <figure class="work-special text-center col" data-aos="zoom-in">
+          <img
+            class="img-fluid"
+            src="{% static 'imgs/specialization_icons/Asset-23.svg' %}"
+            alt="asset"
+            width="85"
+            height="85"
+          />
+          <figcaption class="lh-base fs-5 text-white custom-txt2">
+            ⁠الشبكات والخدمات التقنية
+          </figcaption>
         </figure>
       </div>
     </div>
@@ -144,31 +378,72 @@
 </main>
 <section class="services bg-gray2">
   <div class="container">
-    <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
-        src="{% static 'imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
-      <h3 class="h3 mb-0 color-primary text-uppercase">بماذا نتميز </h3>
+    <div
+      class="d-flex align-items-center justify-content-center pb-4"
+      data-aos="fade-down"
+    >
+      <img
+        class="d-none"
+        src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+        alt="arrow icon"
+      />
+      <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+        بماذا نتميز
+      </h3>
     </div>
     <div class="row justify-content-between mt-4 service-wrapper">
-      <div class="col-12 col-lg-4 text-center"><img class="img-fluid service-img" src="{% static 'imgs/background/service3.png' %}"
-          alt="service 1" data-aos="zoom-out-up"></div>
+      <div class="col-12 col-lg-4 text-center">
+        <img
+          class="img-fluid service-img"
+          src="{% static 'imgs/background/service3.png' %}"
+          alt="service 1"
+          data-aos="zoom-out-up"
+        />
+      </div>
       <div class="col-12 col-lg-8">
         <div class="content" data-aos="zoom-in-left">
-          <h3 class="fs-bold h3 mb-0 color-primary text-uppercase">إن الإنفراد الذي أضفناه في بيت الخيراء الموحد</h3>
-          <p class="service-txt m-0 w-100"><span>هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفك, و تابعنا العمل من
-              مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن
-              واقعية وهل يمكن تطبيقها فعلاً.</span></p>
+          <h3
+            class="fs-bold h3 mb-0 color-primary text-uppercase custom-title2"
+          >
+            إن الإنفراد الذي أضفناه في بيت الخيراء الموحد
+          </h3>
+          <p class="service-txt m-0 w-100 custom-txt">
+            <span
+              >هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفك, و تابعنا العمل
+              من مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك و
+              نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية وهل يمكن
+              تطبيقها فعلاً.</span
+            >
+          </p>
         </div>
       </div>
     </div>
     <div class="row flex-row-reverse justify-content-between mt-4">
-      <div class="col-12 col-lg-4 text-center"><img class="img-fluid service-img" src="{% static 'imgs/background/service4.png' %}"
-          alt="service 1" data-aos="zoom-out-down"></div>
+      <div class="col-12 col-lg-4 text-center">
+        <img
+          class="img-fluid service-img"
+          src="{% static 'imgs/background/service4.png' %}"
+          alt="service 1"
+          data-aos="zoom-out-down"
+        />
+      </div>
       <div class="col-12 col-lg-8">
         <div class="content" data-aos="zoom-in-right">
-          <h3 class="fs-bold h3 mb-0 color-primary text-uppercase">خبراءنا يضعون حجر الأساس بعلمهم</h3>
-          <p class="service-txt m-0 w-100"><span>إن التقارير الجميلة و البيانات الطموحة تحتاج لمن يقرأها بيعن الخبير و
-              يتأكد فاعليتها . و لذلك خبراءنا يضعون حجر الأساس بعلمهم, يوثقون القواعد و الأركان بمعرفتهم و يراقبون
-              البناء بخبراتهم. <span class='fw-bold'>حتى يكون لدينا صرحاً من المعلومات يحمي أهدافنا.</span></span></p>
+          <h3
+            class="fs-bold h3 mb-0 color-primary text-uppercase custom-title2"
+          >
+            خبراءنا يضعون حجر الأساس بعلمهم
+          </h3>
+          <p class="service-txt m-0 w-100 custom-txt">
+            <span
+              >إن التقارير الجميلة و البيانات الطموحة تحتاج لمن يقرأها بيعن
+              الخبير و يتأكد فاعليتها . و لذلك خبراءنا يضعون حجر الأساس بعلمهم,
+              يوثقون القواعد و الأركان بمعرفتهم و يراقبون البناء بخبراتهم.
+              <span class="fw-bold"
+                >حتى يكون لدينا صرحاً من المعلومات يحمي أهدافنا.</span
+              ></span
+            >
+          </p>
         </div>
       </div>
     </div>

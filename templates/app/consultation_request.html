@@ -1,43 +1,103 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block content %}
-<header class="banner banner-contact d-flex justify-content-center align-items-center"></header>
+{% extends "base.html" %} {% load static %} {% block content %}
+<header
+  class="banner banner-contact d-flex justify-content-center align-items-center"
+></header>
 <main class="main-how">
   <section class="contact">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
-          src="{% static 'imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
-        <h3 class="h3 mb-0 color-primary text-uppercase">نحن معك دائماً</h3>
+      <div
+        class="d-flex align-items-center justify-content-center pb-4"
+        data-aos="fade-down"
+      >
+        <img
+          class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+          alt="arrow icon"
+        />
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+          نحن معك دائماً
+        </h3>
       </div>
       <div class="contact-form mt-4 shadow">
-        <div class="row row-cols-1 row-cols-lg-2 justify-content-between" data-aos="zoom-out">
+        <div
+          class="row row-cols-1 row-cols-lg-2 justify-content-between"
+          data-aos="zoom-out"
+        >
           <div class="img-wrapper d-none d-lg-block"></div>
           <div class="form-wrapper">
             <div class="content py-4">
-              <h3 class="text-center colot-primary">طلب إستشارة</h3>
-              <p class="text-center colot-primary lh-base"><span>شكراً على اهتمامك بـ<span class=fw-bold>"بيت الخبراء
-                    الموحد"!</span> تواصل معنا وشاركنا أسئلتك وإقتراحاتك وأفكارك، فتواصلك يسرّنا دوماً</span></p>
+              <h3 class="text-center color-primary custom-title2">
+                طلب إستشارة
+              </h3>
+              <p class="text-center color-primary lh-base custom-txt">
+                <span
+                  >شكراً على اهتمامك بـ<span class="fw-bold"
+                    >"بيت الخبراء الموحد"!</span
+                  >
+                  تواصل معنا وشاركنا أسئلتك وإقتراحاتك وأفكارك، فتواصلك يسرّنا
+                  دوماً</span
+                >
+              </p>
             </div>
-            <form class="form row g-3" method="post" action="{% url 'consultation_form' %}">
+            <form
+              class="form row g-3"
+              method="post"
+              action="{% url 'consultation_form' %}"
+            >
               {% csrf_token %}
               <div class="col-12 col-lg-6">
-                <input name="first_name" required class="form-control" type="text" placeholder="الاسم الاول" aria-label="First name">
+                <input
+                  name="first_name"
+                  required
+                  class="form-control custom-txt2"
+                  type="text"
+                  placeholder="الاسم الاول"
+                  aria-label="First name"
+                />
               </div>
               <div class="col-12 col-lg-6">
-                <input name="last_name" class="form-control" type="text" placeholder="الاسم الاخير" aria-label="Last name">
+                <input
+                  name="last_name"
+                  class="form-control custom-txt2"
+                  type="text"
+                  placeholder="الاسم الاخير"
+                  aria-label="Last name"
+                />
               </div>
               <div class="col-12">
-                <input name="email" required class="form-control" type="email" placeholder="البريد الااكتروني">
+                <input
+                  name="email"
+                  required
+                  class="form-control custom-txt2"
+                  type="email"
+                  placeholder="البريد الااكتروني"
+                />
               </div>
               <div class="col-12">
-                <input name="phone" class="form-control" type="tel" name="phone" placeholder="رقم الهاتف"
-                  required>
+                <input
+                  name="phone"
+                  class="form-control custom-txt2"
+                  type="tel"
+                  name="phone"
+                  placeholder="رقم الهاتف"
+                  required
+                />
               </div>
               <div class="col-12">
-                <textarea name="message" required class="form-control" rows="5" placeholder="تفاصيل الاستشارة"></textarea>
+                <textarea
+                  name="message"
+                  required
+                  class="form-control custom-txt2"
+                  rows="5"
+                  placeholder="تفاصيل الاستشارة"
+                ></textarea>
               </div>
-              <button class="btn mx-auto button-primary w-50 mt-4 submit-btn" type="submit">إرسال</button>
+              <button
+                class="btn mx-auto button-primary w-50 mt-4 submit-btn"
+                type="submit"
+              >
+                إرسال
+              </button>
             </form>
           </div>
         </div>

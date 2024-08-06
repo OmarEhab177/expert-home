@@ -1,48 +1,77 @@
-{% extends "base.html" %}
-{% load static %}
-
-
-{% block content %}
-<header class="banner banner-how d-flex justify-content-center align-items-center"></header>
+{% extends "base.html" %} {% load static %} {% block content %}
+<header
+  class="banner banner-how d-flex justify-content-center align-items-center"
+></header>
 <main class="main-how">
   <section class="how-work">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
-          src="{% static 'imgs/icons/arrow-left-line.svg' %}" alt="arrow icon" />
-        <h3 class="h3 mb-0 color-primary text-uppercase">آلية العمل</h3>
+      <div
+        class="d-flex align-items-center justify-content-center pb-4"
+        data-aos="fade-down"
+      >
+        <img
+          class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+          alt="arrow icon"
+        />
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+          آلية العمل
+        </h3>
       </div>
-      <p class="service-txt m-0 w-75 mx-auto text-center pt-0"><span>سوف نستضيفك لنتعرف على بعضنا بشكل افضل و لنسمع منك
-          ما يدور في رأسك من طموحات و بناءا عليه سنقول لك ما نفكر فيه لنحقق هذه الطموحات وما هي افضل الممارسات.</span>
+      <p
+        class="service-txt m-0 w-75 mx-auto text-center pt-0 custom-txt custom-width"
+      >
+        <span
+          >سوف نستضيفك لنتعرف على بعضنا بشكل افضل و لنسمع منك ما يدور في رأسك من
+          طموحات و بناءا عليه سنقول لك ما نفكر فيه لنحقق هذه الطموحات وما هي
+          افضل الممارسات.</span
+        >
       </p>
       <ul class="timeline">
         <li class="timeline" data-aos="fade-right">
-          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-1"></div>
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-1"
+          ></div>
           <details class="panel">
-            <summary>آلية تنفيذ الفكرة</summary>
+            <summary class="custom-txt2">آلية تنفيذ الفكرة</summary>
           </details>
         </li>
         <li class="timeline" data-aos="fade-left">
-          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-2"></div>
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-2"
+          ></div>
           <details class="panel">
-            <summary>الخبير أو الفريق المناسب لهذه المهمة</summary>
+            <summary class="custom-txt2">
+              الخبير أو الفريق المناسب لهذه المهمة
+            </summary>
           </details>
         </li>
         <li class="timeline" data-aos="fade-right">
-          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-3"></div>
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-3"
+          ></div>
           <details class="panel">
-            <summary>ماهي الخبرات التي تناسب مشروعك</summary>
+            <summary class="custom-txt2">
+              ماهي الخبرات التي تناسب مشروعك
+            </summary>
           </details>
         </li>
         <li class="timeline" data-aos="fade-left">
-          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-4"></div>
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-4"
+          ></div>
           <details class="panel">
-            <summary>مدة التنفيذ و التكلفة</summary>
+            <summary class="custom-txt2">مدة التنفيذ و التكلفة</summary>
           </details>
         </li>
         <li class="timeline" data-aos="fade-right">
-          <div class="icon shadow d-flex justify-content-center align-items-center color-primary icon-5"></div>
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-5"
+          ></div>
           <details class="panel">
-            <summary>ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل</summary>
+            <summary class="custom-txt2">
+              ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل
+            </summary>
           </details>
         </li>
       </ul>
