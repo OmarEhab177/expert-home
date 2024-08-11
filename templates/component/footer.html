@@ -3,39 +3,92 @@
   <div class="container">
     <div class="row gx-1 justify-content-between">
       <div class="col-12 col-lg-5">
-        <figure class="figure"><a class="logo-link text-decoration-none" href="/"><img
-              class="figure-img img-fluid logo-footer" src="{% static 'imgs/logos/UHX-white.svg' %}" alt="uhx logo"></a>
-          <figcaption class="figure-caption fs-6 text-white fw-medium lh-base w-100 caption">بيت الخبراء يفتح أبوابه
-            ويأخذ معك رحلة التغيير من البداية</figcaption>
+        <figure class="figure">
+          <a class="logo-link text-decoration-none" href="/"
+            ><img
+              class="figure-img img-fluid logo-footer"
+              src="{% static 'imgs/logos/UHX-white.svg' %}"
+              alt="uhx logo"
+          /></a>
+          <figcaption
+            class="figure-caption fs-6 text-white fw-medium lh-base w-100 caption custom-txt2"
+          >
+            بيت الخبراء يفتح أبوابه ويأخذ معك رحلة التغيير من البداية
+          </figcaption>
         </figure>
       </div>
       <div class="col-12 col-lg-2">
-        <h3 class="fs-5 text-white">روابط تهمك</h3>
-        <ul class="list-group gap-2 items"><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none"
-            href="{% url 'about' %}">من
-            نحن</a><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none"
-            href="{% url 'experience' %}">الخبرات</a><a
-            class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="{% url 'services' %}">خدماتنا</a><a
-            class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="{% url 'action_aechanism' %}">آلية
-            العمل</a></ul>
+        <h3 class="fs-5 text-white custom-title2">روابط تهمك</h3>
+        <ul class="list-group gap-2 items">
+          <a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'about' %}"
+            >من نحن</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'experience' %}"
+            >الخبرات</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'services' %}"
+            >خدماتنا</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'action_aechanism' %}"
+            >آلية العمل</a
+          >
+        </ul>
       </div>
       <div class="col-12 col-lg-2">
         <h3 class="fs-5 text-white">نحن معك دائماً</h3>
-        <ul class="list-group gap-2 items"><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none"
-            href="{% url 'consultation_request' %}">طلب
-            إستشارة</a><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none"
-            href="{% url 'join_as_expert_officer' %}">إنضم كخبير</a></ul>
-        <div class="social-icons d-flex gap-4 mt-4 p-3 pt-0"><a href="https://x.com/UHX_SA"><img class="img-fluid"
-              src="{% static '/imgs/icons/twitter.png' %}" alt="twitter" width="24" height="24"></a><a
-            href="https://www.instagram.com/uhx_sa/"><img class="img-fluid" src="{% static '/imgs/icons/instagram.png' %}"
-              alt="instagram" width="24" height="24"></a><a href="https://www.linkedin.com/in/uhx-sa/"><img
-              class="img-fluid" src="{% static '/imgs/icons/linkedin.png' %}" alt="linkedin" width="24" height="24"></a></div>
+        <ul class="list-group gap-2 items">
+          <a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'consultation_request' %}"
+            >طلب إستشارة</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'join_as_expert_officer' %}"
+            >إنضم كخبير</a
+          >
+        </ul>
+        <div class="social-icons d-flex gap-4 mt-4 p-3 pt-0">
+          <a href="https://x.com/UHX_SA"
+            ><img
+              class="img-fluid"
+              src="{% static '/imgs/icons/twitter.png' %}"
+              alt="twitter"
+              width="24"
+              height="24" /></a
+          ><a href="https://www.instagram.com/uhx_sa/"
+            ><img
+              class="img-fluid"
+              src="{% static '/imgs/icons/instagram.png' %}"
+              alt="instagram"
+              width="24"
+              height="24" /></a
+          ><a href="https://www.linkedin.com/in/uhx-sa/"
+            ><img
+              class="img-fluid"
+              src="{% static '/imgs/icons/linkedin.png' %}"
+              alt="linkedin"
+              width="24"
+              height="24"
+          /></a>
+        </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block"><img class="img-fluid scaled"
-          src="{% static '/imgs/background/footer-tree.svg' %}" alt="tree"></div>
+      <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+        <img
+          class="img-fluid scaled"
+          src="{% static '/imgs/background/footer-tree.svg' %}"
+          alt="tree"
+        />
+      </div>
     </div>
   </div>
   <div class="block">
-    <p class="m-0">حقوق النشر &copy; 2024 بيت الخبراء الموحد. كل الحقوق محفوظة.</p>
+    <p class="m-0 mt-3 custom-txt2">
+      حقوق النشر &copy; 2024 بيت الخبراء الموحد. كل الحقوق محفوظة.
+    </p>
   </div>
 </footer>
