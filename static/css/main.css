@@ -17,9 +17,9 @@ body {
     font-family: "Cairo", sans-serif;
     overflow-x: hidden;
 }
-body > *:not(nav) {
+/* body > *:not(nav) {
     overflow-x: hidden !important;
-}
+} */
 
 @keyframes pulse {
     0% {

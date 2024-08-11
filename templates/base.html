@@ -69,8 +69,10 @@
     {% include 'component/header.html' %}
 
     <main>
-      {% block content %} {% endblock content %} {% include
-      'component/footer.html' %}
+      {% block content %}
+      {% endblock content %}
+
+      {% include 'component/footer.html' %}
     </main>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
