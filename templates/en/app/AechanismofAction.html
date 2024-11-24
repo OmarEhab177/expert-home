@@ -1,0 +1,83 @@
+{% extends "en/base.html" %} {% load static %} {% block content %}
+<header
+  class="banner banner-how d-flex justify-content-center align-items-center"
+></header>
+<main class="main-how">
+  <section class="how-work">
+    <div class="container">
+      <div
+        class="d-flex align-items-center justify-content-center pb-4"
+        data-aos="fade-down"
+      >
+        <img
+          class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+          alt="arrow icon"
+        />
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+          How It Works
+        </h3>
+      </div>
+      <p
+        class="service-txt m-0 w-75 mx-auto text-center pt-0 custom-txt custom-width"
+      >
+        <span
+          >We will host you to get to know each other better and hear from you
+          what your aspirations are. Based on that, we will tell you what we
+          think to achieve these aspirations and what the best practices
+          are.</span
+        >
+      </p>
+      <ul class="timeline">
+        <li class="timeline" data-aos="fade-right">
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-1"
+          ></div>
+          <details class="panel">
+            <summary class="custom-txt2">Idea Execution Process</summary>
+          </details>
+        </li>
+        <li class="timeline" data-aos="fade-left">
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-2"
+          ></div>
+          <details class="panel">
+            <summary class="custom-txt2">
+              The Expert or Team for This Task
+            </summary>
+          </details>
+        </li>
+        <li class="timeline" data-aos="fade-right">
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-3"
+          ></div>
+          <details class="panel">
+            <summary class="custom-txt2">
+              What Expertise Fits Your Project
+            </summary>
+          </details>
+        </li>
+        <li class="timeline" data-aos="fade-left">
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-4"
+          ></div>
+          <details class="panel">
+            <summary class="custom-txt2">Execution Time and Cost</summary>
+          </details>
+        </li>
+        <li class="timeline" data-aos="fade-right">
+          <div
+            class="icon shadow d-flex justify-content-center align-items-center color-primary icon-5"
+          ></div>
+          <details class="panel">
+            <summary class="custom-txt2">
+              Then we ask you to set an appointment for the expert to explain in
+              detail what will be done.
+            </summary>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+{% endblock content %}

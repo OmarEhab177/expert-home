@@ -1,0 +1,95 @@
+{% load static %}
+<footer class="footer py-6 overflow-hidden">
+  <div class="container">
+    <div class="row gx-1 justify-content-between">
+      <div class="col-12 col-lg-5">
+        <figure class="figure">
+          <a class="logo-link text-decoration-none" href="{% url 'en_home' %}"
+            ><img
+              class="figure-img img-fluid logo-footer"
+              src="{% static 'imgs/logos/UHX-white.svg' %}"
+              alt="uhx logo"
+          /></a>
+          <figcaption
+            class="figure-caption fs-6 text-white fw-medium lh-base w-100 caption custom-txt2"
+          >
+            The Experts' House Opens Its Doors and Takes You on a Journey of
+            Change from the Beginning
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-12 col-lg-2">
+        <h3 class="fs-5 text-white custom-title2">روابط تهمك</h3>
+        <ul class="list-group gap-2 items">
+          <a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'en_about' %}"
+            >About Us</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'en_experience' %}"
+            >Expertise</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'en_services' %}"
+            >Our Services</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'en_action_aechanism' %}"
+            >How It Works</a
+          >
+        </ul>
+      </div>
+      <div class="col-12 col-lg-2">
+        <h3 class="fs-5 text-white">We Are Always Here For You</h3>
+        <ul class="list-group gap-2 items">
+          <a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'en_consultation_request' %}"
+            >Request Consultation</a
+          ><a
+            class="footer-link custom-txt2 fs-6 text-white fw-medium lh-base text-decoration-none"
+            href="{% url 'en_join_as_expert_officer' %}"
+            >Join as Expert</a
+          >
+        </ul>
+        <div class="social-icons d-flex gap-4 mt-4 p-3 pt-0">
+          <a href="https://x.com/UHX_SA"
+            ><img
+              class="img-fluid"
+              src="{% static '/imgs/icons/twitter.png' %}"
+              alt="twitter"
+              width="24"
+              height="24" /></a
+          ><a href="https://www.instagram.com/uhx_sa/"
+            ><img
+              class="img-fluid"
+              src="{% static '/imgs/icons/instagram.png' %}"
+              alt="instagram"
+              width="24"
+              height="24" /></a
+          ><a href="https://www.linkedin.com/in/uhx-sa/"
+            ><img
+              class="img-fluid"
+              src="{% static '/imgs/icons/linkedin.png' %}"
+              alt="linkedin"
+              width="24"
+              height="24"
+          /></a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+        <img
+          class="img-fluid scaled"
+          src="{% static '/imgs/background/footer-tree.svg' %}"
+          alt="tree"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <p class="m-0 mt-3 custom-txt2">
+      Copyright &copy; 2024 Unified Experts' House. All rights reserved.
+    </p>
+  </div>
+</footer>
