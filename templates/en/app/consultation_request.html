@@ -1,0 +1,109 @@
+{% extends "en/base.html" %} {% load static %} {% block content %}
+<header
+  class="banner banner-contact d-flex justify-content-center align-items-center"
+></header>
+<main class="main-how">
+  <section class="contact">
+    <div class="container">
+      <div
+        class="d-flex align-items-center justify-content-center pb-4"
+        data-aos="fade-down"
+      >
+        <img
+          class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+          alt="arrow icon"
+        />
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+          We Are Always Here For You
+        </h3>
+      </div>
+      <div class="contact-form mt-4 shadow">
+        <div
+          class="row row-cols-1 row-cols-lg-2 justify-content-between"
+          data-aos="zoom-out"
+        >
+          <div class="img-wrapper d-none d-lg-block"></div>
+          <div class="form-wrapper">
+            <div class="content py-4">
+              <h3 class="text-center color-primary custom-title2">
+                Request Consultation
+              </h3>
+              <p class="text-center color-primary lh-base custom-txt">
+                <span
+                  >Thank you for your interest in<span class="fw-bold"
+                    >&quot;Unified Experts' House&quot;!</span
+                  >
+                  Contact us and share your questions, suggestions, and ideas.
+                  We are always happy to hear from you.</span
+                >
+              </p>
+            </div>
+            <form
+              class="form row g-3"
+              method="post"
+              action="{% url 'en_consultation_form' %}"
+            >
+              {% csrf_token %}
+              <div class="col-12 col-lg-6">
+                <input
+                  name="first_name"
+                  required
+                  class="form-control custom-txt2"
+                  type="text"
+                  placeholder="First Name"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-12 col-lg-6">
+                <input
+                  name="last_name"
+                  class="form-control custom-txt2"
+                  type="text"
+                  placeholder="Last Name"
+                  aria-label="Last name"
+                />
+              </div>
+              <div class="col-12">
+                <input
+                  name="email"
+                  required
+                  class="form-control custom-txt2"
+                  type="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="col-12">
+                <input
+                  name="phone"
+                  class="form-control custom-txt2"
+                  id="tel"
+                  type="tel"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  name="message"
+                  required
+                  class="form-control custom-txt2"
+                  rows="5"
+                  placeholder="Consultation Details"
+                ></textarea>
+              </div>
+              <button
+                class="btn mx-auto button-primary w-50 mt-4 submit-btn"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock content %}
