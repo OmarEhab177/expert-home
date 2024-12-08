@@ -1253,3 +1253,17 @@ p > span {
     padding: 1rem;
     text-align: center;
 }
+
+
+@media (min-width: 1400px) {
+    .logo_margin_right_en{
+        margin-right: 16rem;
+    }
+
+}
+
+@media(min-width: 1200px) and (max-width: 1400px){
+    .logo_margin_right_en{
+        margin-right: 8rem;
+    }
+}

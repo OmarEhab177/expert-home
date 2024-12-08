@@ -1,0 +1,120 @@
+{% extends "en/base.html" %} {% load static %} {% block content %}
+
+<header
+  class="banner banner-about d-flex justify-content-center align-items-center"
+>
+  <div class="container">
+    <div class="content d-flex flex-column text-white">
+      <h2
+        class="h1 fs-1 fw-semibold fw-lg-bold lh-base text-center w-75 mx-auto custom-title"
+        data-aos="fade-down"
+      >
+        We have gathered here from everywhere
+      </h2>
+      <p
+        class="h4 fs-4 fw-semibold fw-lg-bold lh-base text-center w-75 mx-auto custom-txt"
+      >
+        To share our knowledge and experience with anyone seeking information or
+        looking for a specialist in any field, with real-world expertise in
+        various financial, administrative, and business sectors.
+      </p>
+    </div>
+  </div>
+</header>
+<main class="main-about">
+  <section class="who">
+    <div class="container">
+      <div
+        class="d-flex align-items-center justify-content-center pb-4"
+        data-aos="fade-down"
+      >
+        <img
+          class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+          alt="arrow icon"
+        />
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+          In Our House, an Expert
+        </h3>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-4 cards-p">
+        <div class="col">
+          <div class="card h-100 shadow border-0" data-aos="flip-left">
+            <img
+              class="card-img-top"
+              src="{% static 'imgs/background/grid1.png' %}"
+              alt="card image"
+              height="269px"
+            />
+            <div class="card-body text-center card-content">
+              <h5 class="card-title color-primary fw-bold custom-title3">
+                Establishment
+              </h5>
+              <p class="card-text lh-lg custom-txt3">
+                Through our experience as founders of the Experts' House, we
+                have gained many friends, colleagues, and acquaintances in
+                various fields. No matter what your project or goal is, we will
+                search within our house for what meets your needs, or we may
+                host someone specifically for your project to fulfill your
+                request.<span class="d-inline-block color-primary"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow border-0" data-aos="flip-up">
+            <img
+              class="card-img-top"
+              src="{% static 'imgs/background/grid2.png' %}"
+              alt="card image"
+              height="269px"
+            />
+            <div class="card-body text-center card-content">
+              <h5 class="card-title color-primary fw-bold custom-title3">
+                Goals
+              </h5>
+              <p class="card-text lh-lg custom-txt3">
+                We give our experts the opportunity to practice their passion by
+                sharing their knowledge, and we provide our clients with
+                quality, speed of execution, and results that meet their
+                ambitions and goals without complications or delays.<span
+                  class="d-inline-block color-primary"
+                ></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow border-0" data-aos="flip-right">
+            <img
+              class="card-img-top"
+              src="{% static 'imgs/background/grid3.png' %}"
+              alt="card image"
+              height="269px"
+            />
+            <div class="card-body text-center card-content">
+              <h5 class="card-title color-primary fw-bold custom-title3">
+                Our Vision
+              </h5>
+              <p class="card-text lh-lg custom-txt3">
+                It is to contribute to the establishment of national
+                institutions working with the concept of sustainability and
+                continuity, directly supporting the pillars of the national
+                economy, by applying institutional work standards,
+                restructuring, and establishing solid foundations and
+                infrastructure. This will be done through a set of services and
+                programs that create a good and professional work environment
+                and a clear strategy with one goal:
+                <span class="d-inline-block color-primary"
+                  >&quot;Governance and Sustainability&quot;</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock content %}

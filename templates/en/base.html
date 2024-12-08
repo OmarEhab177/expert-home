@@ -1,11 +1,11 @@
 {% load static %}
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html dir="ltr" lang="en">
   <head>
     <meta charset="utf-8" />
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" /> -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="ar" name="language" /> -->
+    <meta content="ar" name="language" /> -->
     <meta
       property="og:image"
       content="{% static 'imgs/logos/main-logo.png' %}"
@@ -66,13 +66,13 @@
     <!-- <div class="loader" id="loader"><img class="loader-img" src="{% static './imgs/logos/UHX-white.svg' %}"
       alt="uhx logo"></div> -->
 
-    {% include 'component/header.html' %}
+    {% include 'en/component/header.html' %}
 
     <main>
-      {% block content %}
-      {% endblock content %}
+      {% block content %} {% endblock content %} 
     </main>
-    {% include 'component/footer.html' %}
+
+    {% include 'en/component/footer.html' %}
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script

@@ -1,5 +1,4 @@
 $(function () {
-
     // $(window).on('load', function () {
     //     $('#loader').fadeOut('slow', function () {
     //         $('body').removeClass('no-scroll');
@@ -25,9 +24,12 @@ $(function () {
         $("#marquee").removeClass("pause").addClass("running");
     });
 
-    $("#navbarSupportedContent a:not(.dropdown-toggle)").on("click", function () {
-        $("#navbarSupportedContent").collapse("hide");
-    });
+    $("#navbarSupportedContent a:not(.dropdown-toggle)").on(
+        "click",
+        function () {
+            $("#navbarSupportedContent").collapse("hide");
+        }
+    );
 
     $(".owl-carousel").owlCarousel({
         loop: true,
@@ -38,15 +40,15 @@ $(function () {
         nav: true,
         navText: [
             '<img src="/static/imgs/icons/arrow-left.png" class="slider-my-arrow-left">',
-            '<img src="/static/imgs/icons/arrow-right.png" class="slider-my-arrow-right">'
+            '<img src="/static/imgs/icons/arrow-right.png" class="slider-my-arrow-right">',
         ],
         dots: false,
         center: true,
         responsive: {
             0: { items: 1 },
             600: { items: 2 },
-            1000: { items: 4 }
-        }
+            1000: { items: 4 },
+        },
     });
 
     AOS.init();
