@@ -1,7 +1,7 @@
 {% load static %}
 <nav class="navbar fixed-top navbar-expand-xl bg-primary">
   <div class="container">
-    <a class="navbar-brand brand" href="{% url 'home' %}"
+    <a class="navbar-brand brand logo_margin_right_en" href="{% url 'en_home' %}"
       ><img
         class="logo-dimension"
         src="{% static '/imgs/logos/UHX-white.svg' %}"
@@ -20,51 +20,51 @@
       ><span class="toggler-icon mid-bar"></span
       ><span class="toggler-icon bottom-bar"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse flex-start" id="navbarSupportedContent">
       <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0 gap-3">
         <li class="nav-item">
           <a
             class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
             aria-current="page"
-            href="{% url 'home' %}"
+            href="{% url 'en_home' %}"
             data-toggle="collapse"
-            >الرئيسية</a
+            >Home</a
           >
         </li>
         <li class="nav-item">
           <a
             class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
             aria-current="page"
-            href="{% url 'about' %}"
+            href="{% url 'en_about' %}"
             data-toggle="collapse"
-            >من نحن</a
+            >About Us</a
           >
         </li>
         <li class="nav-item">
           <a
             class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
             aria-current="page"
-            href="{% url 'services' %}"
+            href="{% url 'en_services' %}"
             data-toggle="collapse"
-            >خدماتنا</a
+            >Our Services</a
           >
         </li>
         <li class="nav-item">
           <a
             class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
             aria-current="page"
-            href="{% url 'action_aechanism' %}"
+            href="{% url 'en_action_aechanism' %}"
             data-toggle="collapse"
-            >آلية العمل</a
+            >How It Works</a
           >
         </li>
         <li class="nav-item">
           <a
             class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3"
             aria-current="page"
-            href="{% url 'experience' %}"
+            href="{% url 'en_experience' %}"
             data-toggle="collapse"
-            >الخبرات</a
+            >Expertise</a
           >
         </li>
         <li class="nav-item dropdown">
@@ -74,28 +74,28 @@
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            >نحن معك دائما</a
+            >Here For You</a
           >
           <ul class="dropdown-menu bg-primary-dark py-0">
             <li class="text-center">
               <a
                 class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect"
-                href="{% url 'consultation_request' %}"
-                >طلب استشارة</a
+                href="{% url 'en_consultation_request' %}"
+                >Request Consultation</a
               >
             </li>
             <li class="text-center">
               <a
                 class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect"
-                href="{% url 'join_as_expert_officer' %}"
-                >انضم كخبير</a
+                href="{% url 'en_join_as_expert_officer' %}"
+                >Join as Expert</a
               >
             </li>
             <li class="text-center">
               <a
                 class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect"
-                href="{% url 'licenses' %}"
-                >التراخيص</a
+                href="{% url 'en_licenses' %}"
+                >Licenses</a
               >
             </li>
           </ul>
@@ -103,9 +103,9 @@
         <li class="nav-item mx-auto pb-3">
           <button
             class="download-btn btn rounded-button btn-primary d-flex align-items-center fs-6 gap-2 color-primary bg-white border-0"
-            id="EnlangBtn"
+            id="ArlangBtn"
           >
-            English
+            العربية
           </button>
         </li>
       </ul>
@@ -113,10 +113,16 @@
   </div>
 </nav>
 
+
 <script>
-  const enLangBtn = document.getElementById('EnlangBtn');
-  enLangBtn.addEventListener('click', () => {
+  function removeLanguageSegment(path) {
+    return path.replace(/^\/en/, '');
+}
+  // Toggle language
+  document.getElementById("ArlangBtn").addEventListener("click", function () {
+
     const currentUrl = window.location.pathname;
-    window.location.pathname = `/en${currentUrl}`
+    const arUrl = removeLanguageSegment(currentUrl);
+    window.location.pathname = arUrl
   });
 </script>

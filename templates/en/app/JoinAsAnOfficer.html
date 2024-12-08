@@ -1,0 +1,223 @@
+{% extends "en/base.html" %} {% load static %} {% block content %}
+<header
+  class="banner banner-join d-flex justify-content-center align-items-center"
+></header>
+<main class="main-join">
+  <section class="join" style="padding-top: 3rem; padding-bottom: 3rem">
+    <div class="container">
+      <div
+        class="d-flex align-items-center justify-content-center pb-4"
+        data-aos="fade-down"
+      >
+        <img
+          class="d-none"
+          src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+          alt="arrow icon"
+        />
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+          Join as Expert
+        </h3>
+      </div>
+      <div class="join-content-form mt-4">
+        <form
+          class="join-form row g-3"
+          method="post"
+          action="{% url 'en_join_as_expert_officer_form' %}"
+        >
+          {% csrf_token %}
+          <div class="col-lg-4">
+            <label class="form-label custom-txt2" for="fullName"
+              >Full Name of Expert</label
+            >
+            <input
+              name="name"
+              required
+              class="form-control custom-txt2"
+              id="fullName"
+              type="text"
+            />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label custom-txt2" for="email">Email</label>
+            <input
+              name="email"
+              required
+              class="form-control custom-txt2"
+              id="email"
+              type="email"
+            />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label custom-txt2" for="tel">Phone Number</label>
+            <input
+              name="phone"
+              required
+              class="form-control custom-txt2"
+              id="tel"
+              type="tel"
+            />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label custom-txt2" for="special"
+              >General Specialization</label
+            >
+            <input
+              name="general_specialization"
+              required
+              class="form-control custom-txt2"
+              id="special"
+              type="text"
+            />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label custom-txt2" for="expYears"
+              >Total Years of Work Experience</label
+            >
+            <input
+              name="sum_experience_years"
+              required
+              class="form-control custom-txt2"
+              id="expYears"
+              type="text"
+            />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label custom-txt2" for=""
+              >Do you want to display your name and photo?</label
+            >
+            <div>
+              <div class="form-check form-check-inline custom-txt2">
+                <input
+                  class="form-check-input"
+                  id="yes"
+                  type="radio"
+                  name="display_name_type"
+                  value="YES"
+                />
+                <label class="form-check-label custom-txt2" for="yes"
+                  >Yes</label
+                >
+              </div>
+              <div class="form-check form-check-inline custom-txt2">
+                <input
+                  class="form-check-input"
+                  id="no"
+                  type="radio"
+                  name="display_name_type"
+                  value="NO"
+                />
+                <label class="form-check-label custom-txt2" for="no">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label custom-txt2" for="txtArea1"
+              >Specific Specialization</label
+            >
+            <textarea
+              name="details_specialization_info"
+              required
+              class="form-control custom-txt2"
+              id="txtArea1"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label custom-txt2" for="txtArea2"
+              >Organizations You Worked With
+              <span class="color-primary"
+                >&quot;Please add the website for each organization.&quot;</span
+              ></label
+            >
+            <textarea
+              name="work_experiense_comapnies"
+              required
+              class="form-control custom-txt2"
+              id="txtArea2"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label custom-txt2" for="txtArea3"
+              >Services You Can Provide and Consultations You Can Support (in
+              detail)<span class="color-primary"
+                >&quot;Arabic-English&quot;</span
+              ></label
+            >
+            <textarea
+              name="services"
+              required
+              class="form-control custom-txt2"
+              id="txtArea3"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label custom-txt2" for="txtArea4"
+              >Organizations from Which You Obtained Academic Certificates<span
+                class="color-primary"
+                >&quot;Please add the website for each educational
+                institution.&quot;</span
+              ></label
+            >
+            <textarea
+              name="study_qualifications"
+              required
+              class="form-control custom-txt2"
+              id="txtArea4"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label custom-txt2" for="txtArea5"
+              >Organizations Where You Hold Board Membership, Consultancy, or
+              Collaboration</label
+            >
+            <textarea
+              name="heigh_special_companies"
+              required
+              class="form-control custom-txt2"
+              id="txtArea5"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label custom-txt2" for="txtArea6"
+              >Please Add Any Suggestions, Details, or Important
+              Information</label
+            >
+            <textarea
+              required
+              name="extraInfo"
+              class="form-control custom-txt2"
+              id="txtArea6"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <label class="form-label custom-txt2" for="licensesFiles"
+              >Professional Licenses</label
+            >
+            <input
+              name="attachments"
+              class="form-control custom-txt2"
+              id="licensesFiles"
+              type="file"
+              multiple
+            />
+          </div>
+          <div class="col-12">
+            <button
+              class="btn mx-auto button-primary mt-4 submit-btn"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock content %}

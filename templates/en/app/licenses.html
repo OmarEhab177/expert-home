@@ -1,0 +1,77 @@
+{% extends "en/base.html" %} {% load static %} {% block content %}
+<header
+  class="banner banner-license d-flex justify-content-center align-items-center"
+></header>
+<main class="main-license license">
+  <div class="container">
+    <div
+      class="d-flex align-items-center justify-content-center pb-4"
+      data-aos="fade-down"
+    >
+      <img
+        class="d-none"
+        src="{% static 'imgs/icons/arrow-left-line.svg' %}"
+        alt="arrow icon"
+      />
+      <h3 class="h3 mb-0 color-primary text-uppercase custom-title">
+        Licenses
+      </h3>
+    </div>
+    <section class="license-content">
+      <div class="row g-4 justify-content-center">
+        <div class="col col-12 col-md-6 col-lg-3">
+          <figure class="shadow figure-license text-center h-100 py-3">
+            <img
+              class="img-fluid"
+              src="{% static 'imgs/licenses/license3.png' %}"
+              alt="Financial Consultations"
+              width="350"
+              height="250"
+              style="object-fit: contain"
+            />
+            <figcaption
+              class="caption-license fw-bold color-primary w-100 mt-3"
+            >
+              Financial Consultations
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <figure class="shadow figure-license text-center h-100 py-3">
+            <img
+              class="img-fluid"
+              src="{% static 'imgs/licenses/license2.png' %}"
+              alt="Governance, Risk, and Compliance Consultations"
+              width="350"
+              height="250"
+              style="object-fit: contain"
+            />
+            <figcaption
+              class="caption-license fw-bold color-primary w-100 mt-3"
+            >
+              Governance, Risk, and Compliance Consultations
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <figure class="shadow figure-license text-center h-100 py-3">
+            <img
+              class="img-fluid"
+              src="{% static 'imgs/licenses/license1.png' %}"
+              alt="Administrative Consultations"
+              width="350"
+              height="250"
+              style="object-fit: contain"
+            />
+            <figcaption
+              class="caption-license fw-bold color-primary w-100 mt-3"
+            >
+              Administrative Consultations
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock content %}
