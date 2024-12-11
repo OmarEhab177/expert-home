@@ -1420,6 +1420,7 @@ p > span {
     text-align: center;
 }
 
+
 @media (min-width: 1400px) {
     .logo_margin_right_en {
         margin-right: 16rem;
@@ -1428,6 +1429,7 @@ p > span {
 
 @media (min-width: 1200px) and (max-width: 1400px) {
     .logo_margin_right_en {
+
         margin-right: 8rem;
     }
 }
