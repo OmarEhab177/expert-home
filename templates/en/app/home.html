@@ -180,7 +180,412 @@
       </div>
     </div>
   </section>
-  <section class="works">
+
+  <!-- Products Section (English) -->
+  <section class="products-section bg-gray2">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-3" data-aos="fade-down">
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">What We Offer</h3>
+      </div>
+      <p class="text-center custom-txt mx-auto mb-5" style="max-width:820px;" data-aos="fade-up">
+        Unified Experts House offers a comprehensive range of consulting services through a select group of specialized experts in financial governance, technology, human resources, and organizational development. We help our clients build an integrated institutional environment that supports operational efficiency, regulatory compliance, and sustainable growth.
+      </p>
+      <div class="products-carousel owl-carousel owl-theme" data-aos="fade-up">
+
+        <!-- Card 1 -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon d-flex align-items-center justify-content-center mb-2">
+                <img src="{% static 'imgs/specialization_icons/Asset-1.svg' %}" alt="Corporate Governance" width="48" height="48">
+              </div>
+              <h5 class="product-card-title text-center">Corporate Governance</h5>
+              <p class="product-card-desc text-center">Evaluation of Vision, Strategy &amp; Organizational Performance</p>
+            </div>
+            <button class="btn product-card-btn mt-auto" data-bs-toggle="modal" data-bs-target="#enProductModal1">View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon d-flex align-items-center justify-content-center mb-2">
+                <img src="{% static 'imgs/specialization_icons/Asset-2.svg' %}" alt="Family Governance" width="48" height="48">
+              </div>
+              <h5 class="product-card-title text-center">Family Governance</h5>
+              <p class="product-card-desc text-center">Because Legacy Needs a System, and Family Deserves Harmony</p>
+            </div>
+            <button class="btn product-card-btn mt-auto" data-bs-toggle="modal" data-bs-target="#enProductModal2">View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon d-flex align-items-center justify-content-center mb-2">
+                <img src="{% static 'imgs/specialization_icons/Asset-3.svg' %}" alt="Board Evaluation" width="48" height="48">
+              </div>
+              <h5 class="product-card-title text-center">Board Evaluation</h5>
+              <p class="product-card-desc text-center">A Journey of Change Towards Effectiveness &amp; Leadership</p>
+            </div>
+            <button class="btn product-card-btn mt-auto" data-bs-toggle="modal" data-bs-target="#enProductModal3">View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon d-flex align-items-center justify-content-center mb-2">
+                <img src="{% static 'imgs/specialization_icons/Asset-4.svg' %}" alt="Human Capital Strategy" width="48" height="48">
+              </div>
+              <h5 class="product-card-title text-center">Human Capital Strategy</h5>
+              <p class="product-card-desc text-center">The right talent makes the difference.</p>
+            </div>
+            <button class="btn product-card-btn mt-auto" data-bs-toggle="modal" data-bs-target="#enProductModal4">View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon d-flex align-items-center justify-content-center mb-2">
+                <img src="{% static 'imgs/specialization_icons/Asset-5.svg' %}" alt="External CFO" width="48" height="48">
+              </div>
+              <h5 class="product-card-title text-center">External CFO</h5>
+              <p class="product-card-desc text-center">A specialized financial service that helps you manage your financial performance</p>
+            </div>
+            <button class="btn product-card-btn mt-auto" data-bs-toggle="modal" data-bs-target="#enProductModal5">View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon d-flex align-items-center justify-content-center mb-2">
+                <img src="{% static 'imgs/specialization_icons/Asset-6.svg' %}" alt="Business Studies" width="48" height="48">
+              </div>
+              <h5 class="product-card-title text-center">Business Studies</h5>
+              <p class="product-card-desc text-center">Professional analytical studies to support investment and expansion decisions</p>
+            </div>
+            <button class="btn product-card-btn mt-auto" data-bs-toggle="modal" data-bs-target="#enProductModal6">View Details</button>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="item">
+          <div class="product-card product-card--featured shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon d-flex align-items-center justify-content-center mb-2">
+                <img src="{% static 'imgs/specialization_icons/Asset-7.svg' %}" alt="Consulting Products for SMEs" width="48" height="48">
+              </div>
+              <h5 class="product-card-title text-center">Consulting Products for SMEs</h5>
+              <p class="product-card-desc text-center">Clear Vision.. Smart Direction for Growth.</p>
+            </div>
+            <button class="btn product-card-btn mt-auto" data-bs-toggle="modal" data-bs-target="#enProductModal7">View Details</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- English Product Modals -->
+
+  <!-- Modal 1: Corporate Governance -->
+  <div class="modal fade" id="enProductModal1" tabindex="-1" aria-labelledby="enProductModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon d-flex align-items-center justify-content-center">
+              <img src="{% static 'imgs/specialization_icons/Asset-1.svg' %}" alt="Corporate Governance" width="32" height="32">
+            </div>
+            <h5 class="modal-title fw-bold color-primary" id="enProductModal1Label">Corporate Governance</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>In today's complex and dynamic business environment, effective governance is the foundation of long-term success. At Unified Experts House, we provide specialized governance consulting services that meet the unique needs of families and companies.</p>
+          <p>Our experts ensure that your governance frameworks are robust, adaptable, and aligned with your strategic objectives, enabling you to face challenges, improve performance, and achieve sustainable growth.</p>
+          <ul class="modal-services-list mt-3">
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>IPO Readiness</strong> — Preparing your company for a successful public offering by establishing strong governance structures and ensuring financial transparency and compliance.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Governance Framework</strong> — Developing policies and procedures aligned with regulatory requirements and global best practices.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Board Evaluation &amp; Detailed Audit</strong> — Conducting comprehensive assessments and detailed analyses of board composition, performance, and effectiveness to ensure alignment with strategic objectives.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Board Member Development &amp; Guidance</strong> — Providing training programs and individual mentoring to enhance board members' skills and knowledge and increase their effectiveness in governance roles.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'en_consultation_request' %}" class="btn button-primary circle-btn">Request Consultation</a>
+          <button type="button" class="btn btn-outline-secondary circle-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Family Governance -->
+  <div class="modal fade" id="enProductModal2" tabindex="-1" aria-labelledby="enProductModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon d-flex align-items-center justify-content-center">
+              <img src="{% static 'imgs/specialization_icons/Asset-2.svg' %}" alt="Family Governance" width="32" height="32">
+            </div>
+            <h5 class="modal-title fw-bold color-primary" id="enProductModal2Label">Family Governance — The Driving Force</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>A strategic consulting program designed for owning families and family businesses, aiming to achieve sustainability and family harmony through the design and implementation of an integrated governance framework.</p>
+          <p>We work with families to build family charters, organizational structures, wealth management mechanisms, and succession planning to ensure generational cohesion and business continuity.</p>
+          <p>This service combines governance, family psychology, and business sustainability strategies to give your family: clarity in roles, harmony in values, and continuity in leadership.</p>
+          <ul class="modal-services-list mt-3">
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Family Charter</strong> — Clarifies roles, communication mechanisms, leadership succession, conflict management, and more.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Family Governance Framework</strong> — Family Council, Family Assembly, Code of Conduct.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Ownership &amp; Wealth Governance</strong> — Organizing investment, distributing returns, and financial transparency.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Leadership &amp; Organizational Succession Plan</strong> — To ensure smooth transition of roles between generations.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Interactive Workshops</strong> — With founders, children, and grandchildren to enhance consensus and commitment.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Complete Implementation Plan</strong> — With integrated consulting supervision and continuous training support.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'en_consultation_request' %}" class="btn button-primary circle-btn">Request Consultation</a>
+          <button type="button" class="btn btn-outline-secondary circle-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Board Evaluation -->
+  <div class="modal fade" id="enProductModal3" tabindex="-1" aria-labelledby="enProductModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon d-flex align-items-center justify-content-center">
+              <img src="{% static 'imgs/specialization_icons/Asset-3.svg' %}" alt="Board Evaluation" width="32" height="32">
+            </div>
+            <h5 class="modal-title fw-bold color-primary" id="enProductModal3Label">Board Evaluation</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Board evaluation is an advanced consulting service aimed at enhancing board effectiveness and raising governance quality through professional assessment tools, in-depth interviews, and specialized analysis of collective and individual board member performance.</p>
+          <p>We provide this service through a methodology aligned with global best practices and regulatory systems in Saudi Arabia (such as CMA and SAMA).</p>
+          <ul class="modal-services-list mt-3">
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Compliance with CMA and SAMA requirements</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Enhancing shareholder and stakeholder confidence</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Improving decision-making efficiency within the board</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Identifying strengths and improvement opportunities for board performance</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Developing structure and governance in preparation for institutional growth</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Supporting plans for listing in the financial market or strategic expansion</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Comprehensive evaluation report for board and members' performance (individual and collective)</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Practical implementation plan to improve board performance</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Customized presentation before board members to discuss results</div></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'en_consultation_request' %}" class="btn button-primary circle-btn">Request Consultation</a>
+          <button type="button" class="btn btn-outline-secondary circle-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Human Capital Strategy -->
+  <div class="modal fade" id="enProductModal4" tabindex="-1" aria-labelledby="enProductModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon d-flex align-items-center justify-content-center">
+              <img src="{% static 'imgs/specialization_icons/Asset-4.svg' %}" alt="Human Capital Strategy" width="32" height="32">
+            </div>
+            <h5 class="modal-title fw-bold color-primary" id="enProductModal4Label">Human Capital Strategy</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The right talent makes the difference. We help you find the competencies that match your company's needs and support your growth with confidence and efficiency.</p>
+          <p>Human capital strategy embodies an integrated approach to renewing and developing human resources through accurate diagnosis of the current situation, updating structures, jobs, and systems, and building capabilities and raising efficiency, ensuring alignment of human capital with company objectives, improving organizational performance and employee experience, and enhancing sustainability and competitiveness.</p>
+          <ul class="modal-services-list mt-3">
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Identifying needs and job analysis</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Search and sourcing through multiple channels</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Interview management and selection</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Support in drafting job offers and contracts</div></li>
+          </ul>
+          <div class="modal-info-box mt-4">
+            <p class="mb-0 fw-semibold color-primary">Our Goal</p>
+            <p class="mb-0 mt-1">To provide you with a strong team that contributes to achieving your goals quickly and effectively.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'en_consultation_request' %}" class="btn button-primary circle-btn">Request Consultation</a>
+          <button type="button" class="btn btn-outline-secondary circle-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: External CFO -->
+  <div class="modal fade" id="enProductModal5" tabindex="-1" aria-labelledby="enProductModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon d-flex align-items-center justify-content-center">
+              <img src="{% static 'imgs/specialization_icons/Asset-5.svg' %}" alt="External CFO" width="32" height="32">
+            </div>
+            <h5 class="modal-title fw-bold color-primary" id="enProductModal5Label">External CFO</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>A specialized financial service that helps you control financial performance, address challenges, improve decision quality, and organize financial infrastructure to ensure stability and sustainability.</p>
+          <p>The External CFO is not just an accounting service, but a strategic partner who works with you to transform numbers into clear insights, and build a professional financial system that enables you to control risks, maximize returns, and make precise decisions that support your establishment's growth with confidence and sustainability.</p>
+          <ul class="modal-services-list mt-3">
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Controlling financial policies and oversight</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Cash flow and liquidity management</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Cost monitoring and profitability improvement</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Designing necessary financial reports to support decision-making</div></li>
+          </ul>
+          <p class="mt-4 fst-italic fw-bold color-primary">"The External CFO is your strategic eye on money... adjusts the course, protects stability, and leads growth with decisions based on accurate numbers and clear vision."</p>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'en_consultation_request' %}" class="btn button-primary circle-btn">Request Consultation</a>
+          <button type="button" class="btn btn-outline-secondary circle-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Business Studies -->
+  <div class="modal fade" id="enProductModal6" tabindex="-1" aria-labelledby="enProductModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon d-flex align-items-center justify-content-center">
+              <img src="{% static 'imgs/specialization_icons/Asset-6.svg' %}" alt="Business Studies" width="32" height="32">
+            </div>
+            <h5 class="modal-title fw-bold color-primary" id="enProductModal6Label">Business Studies</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Professional analytical studies to support investment and expansion decisions, based on realistic numbers and approved methodologies.</p>
+          <p>Business studies enable you to see the complete picture before making a decision, through in-depth analysis of the market, feasibility, and risks, and transforming data into practical recommendations that support your investments and expansion on clear and studied foundations.</p>
+          <ul class="modal-services-list mt-3">
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Controlling financial policies and oversight</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Cash flow and liquidity management</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Designing necessary financial reports to support decision-making</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Cost monitoring and profitability improvement</div></li>
+            <li><span class="modal-list-dot flex-shrink-0 mt-1"></span><div>Support for expansion, financing, and compliance</div></li>
+          </ul>
+          <p class="mt-4 fst-italic fw-bold color-primary">"Business studies are the compass that guides your investment decisions from idea to success with confidence and clarity."</p>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'en_consultation_request' %}" class="btn button-primary circle-btn">Request Consultation</a>
+          <button type="button" class="btn btn-outline-secondary circle-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Consulting Products for SMEs -->
+  <div class="modal fade" id="enProductModal7" tabindex="-1" aria-labelledby="enProductModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon d-flex align-items-center justify-content-center">
+              <img src="{% static 'imgs/specialization_icons/Asset-7.svg' %}" alt="Consulting Products for SMEs" width="32" height="32">
+            </div>
+            <h5 class="modal-title fw-bold color-primary" id="enProductModal7Label">Consulting Products for SMEs</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3 mb-4">
+            <div class="col-12 col-md-6">
+              <div class="modal-info-box h-100">
+                <p class="mb-0">We provide integrated consulting solutions starting from building institutional identity and content creation, through talent acquisition and activating digital presence, to governance evaluation and board performance assessment according to best practices.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="modal-info-box h-100">
+                <p class="mb-0">We help establishments understand their current reality, identify their gaps, and put in place practical development plans that are implementable and measurable, supporting decision-making and enhancing sustainability and growth with confidence.</p>
+              </div>
+            </div>
+          </div>
+          <ul class="modal-services-list">
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Content Writing</strong> — Professional content that reflects your establishment's identity and creates a powerful first impression.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Talent Acquisition</strong> — Selecting the right competencies to build a team that supports growth and achieves objectives.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Social Media Platform Evaluation &amp; Activation</strong> — Transforming your digital presence into real impact that enhances your brand.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>Board Evaluation</strong> — Measuring board performance according to governance best practices to enhance decision effectiveness.</div>
+            </li>
+            <li>
+              <span class="modal-list-dot flex-shrink-0 mt-1"></span>
+              <div><strong>The Organizational Compass</strong> — Clear vision and practical development plan that leads your establishment towards sustainable growth.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="{% url 'en_consultation_request' %}" class="btn button-primary circle-btn">Request Consultation</a>
+          <button type="button" class="btn btn-outline-secondary circle-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End English Product Modals -->
+
+  <!-- <section class="works">
     <div class="container">
       <h3 class="fs-bold h3 mb-0 text-uppercase text-center text-white custom-title" data-aos="fade-down">Specializations</h3>
       <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 justify-content-between mt-4">
@@ -220,7 +625,8 @@
       <div class="exp-btn text-center pt-4"><a class="works-btn btn circle-btn button-light"
           href="{% url 'en_services' %}">View More</a></div>
     </div>
-  </section>
+  </section> -->
+
   <section class="how-work">
     <div class="container">
       <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"

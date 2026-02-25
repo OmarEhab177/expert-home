@@ -31,7 +31,7 @@ $(function () {
         }
     );
 
-    $(".owl-carousel").owlCarousel({
+    $(".clients-slider.owl-carousel").owlCarousel({
         loop: true,
         rtl: true,
         margin: 30,
@@ -48,6 +48,24 @@ $(function () {
             0: { items: 1 },
             600: { items: 2 },
             1000: { items: 4 },
+        },
+    });
+
+    $(".products-carousel.owl-carousel").owlCarousel({
+        loop: true,
+        rtl: $("html").attr("dir") === "rtl",
+        margin: 24,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplayHoverPause: false,
+        nav: false, // Remove arrows
+        dots: true,
+        center: false,
+        responsive: {
+            0: { items: 1 },
+            576: { items: 2 },
+            992: { items: 3 },
+            1200: { items: 4 },
         },
     });
 

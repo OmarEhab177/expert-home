@@ -204,7 +204,412 @@
       </div>
     </div>
   </section>
-  <section class="works">
+
+  <!-- ===== Products Section ===== -->
+  <section class="products-section bg-gray2">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center pb-2" data-aos="fade-down">
+        <h3 class="h3 mb-0 color-primary text-uppercase custom-title">منتجاتنا الاستشارية</h3>
+      </div>
+      <p class="text-center custom-txt mb-5" style="color: var(--color-text);" data-aos="fade-down">
+        تقدم شركة بيت الخبراء الموحد مجموعة شاملة من الخدمات الاستشارية، من خلال نخبة من الخبراء المتخصصين في مجالات الحوكمة المالية، التقنية الموارد البشرية، والتطوير المؤسسي.
+      </p>
+
+      <!-- Owl Carousel -->
+      <div class="products-carousel owl-carousel owl-theme" data-aos="fade-up">
+
+        <!-- Card 1: حوكمة الشركات -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon">
+                <img src="{% static 'imgs/specialization_icons/Asset-1.svg' %}" alt="حوكمة الشركات" width="56" height="56">
+              </div>
+              <h5 class="product-card-title custom-title3">حوكمة الشركات</h5>
+              <p class="product-card-desc custom-txt3">رحلة التغيير نحو الفاعلية والقيادة</p>
+            </div>
+            <button class="btn product-card-btn" data-bs-toggle="modal" data-bs-target="#productModal1">عرض التفاصيل</button>
+          </div>
+        </div>
+
+        <!-- Card 2: حوكمة العائلة -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon">
+                <img src="{% static 'imgs/specialization_icons/Asset-2.svg' %}" alt="حوكمة العائلة" width="56" height="56">
+              </div>
+              <h5 class="product-card-title custom-title3">حوكمة العائلة</h5>
+              <p class="product-card-desc custom-txt3">لأن الأرث يحتاج إلى نظام، والعائلة تستحق الانسجام</p>
+            </div>
+            <button class="btn product-card-btn" data-bs-toggle="modal" data-bs-target="#productModal2">عرض التفاصيل</button>
+          </div>
+        </div>
+
+        <!-- Card 3: تقييم مجلس الإدارة -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon">
+                <img src="{% static 'imgs/specialization_icons/Asset-3.svg' %}" alt="تقييم مجلس الإدارة" width="56" height="56">
+              </div>
+              <h5 class="product-card-title custom-title3">تقييم مجلس الإدارة</h5>
+              <p class="product-card-desc custom-txt3">تقييم الرؤية، الإستراتيجية والأداء المؤسسي</p>
+            </div>
+            <button class="btn product-card-btn" data-bs-toggle="modal" data-bs-target="#productModal3">عرض التفاصيل</button>
+          </div>
+        </div>
+
+        <!-- Card 4: إستراتيجية رأس المال البشري -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon">
+                <img src="{% static 'imgs/specialization_icons/Asset-4.svg' %}" alt="رأس المال البشري" width="56" height="56">
+              </div>
+              <h5 class="product-card-title custom-title3">إستراتيجية رأس المال البشري</h5>
+              <p class="product-card-desc custom-txt3">الموهبة المناسبة تصنع الفارق</p>
+            </div>
+            <button class="btn product-card-btn" data-bs-toggle="modal" data-bs-target="#productModal4">عرض التفاصيل</button>
+          </div>
+        </div>
+
+        <!-- Card 5: المدير المالي الخارجي -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon">
+                <img src="{% static 'imgs/specialization_icons/Asset-5.svg' %}" alt="المدير المالي الخارجي" width="56" height="56">
+              </div>
+              <h5 class="product-card-title custom-title3">المدير المالي الخارجي</h5>
+              <p class="product-card-desc custom-txt3">خدمة مالية متخصصة تساعدك على ضبط الأداء المالي</p>
+            </div>
+            <button class="btn product-card-btn" data-bs-toggle="modal" data-bs-target="#productModal5">عرض التفاصيل</button>
+          </div>
+        </div>
+
+        <!-- Card 6: دراسات الأعمال -->
+        <div class="item">
+          <div class="product-card shadow-sm">
+            <div class="product-card-content">
+              <div class="product-card-icon">
+                <img src="{% static 'imgs/specialization_icons/Asset-6.svg' %}" alt="دراسات الأعمال" width="56" height="56">
+              </div>
+              <h5 class="product-card-title custom-title3">دراسات الأعمال</h5>
+              <p class="product-card-desc custom-txt3">دراسات تحليلية احترافية لدعم قرارات الاستثمار والتوسع</p>
+            </div>
+            <button class="btn product-card-btn" data-bs-toggle="modal" data-bs-target="#productModal6">عرض التفاصيل</button>
+          </div>
+        </div>
+
+        <!-- Card 7: المنتجات الاستشارية للمنشآت الصغيرة والمتوسطة -->
+        <div class="item">
+          <div class="product-card shadow-sm product-card--featured">
+            <div class="product-card-content">
+              <div class="product-card-icon">
+                <img src="{% static 'imgs/specialization_icons/Asset-7.svg' %}" alt="المنشآت الصغيرة والمتوسطة" width="56" height="56">
+              </div>
+              <h5 class="product-card-title custom-title3">المنتجات الاستشارية للمنشآت الصغيرة والمتوسطة</h5>
+              <p class="product-card-desc custom-txt3">رؤية واضحة.. نوجه ذكي للنمو</p>
+            </div>
+            <button class="btn product-card-btn" data-bs-toggle="modal" data-bs-target="#productModal7">عرض التفاصيل</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- /Owl Carousel -->
+
+    </div>
+  </section>
+
+  <!-- ===== Per-Product Modals ===== -->
+
+  <!-- Modal 1: حوكمة الشركات -->
+  <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon flex-shrink-0">
+              <img src="{% static 'imgs/specialization_icons/Asset-1.svg' %}" alt="" width="36" height="36">
+            </div>
+            <h5 class="modal-title color-primary fw-bold custom-title3 mb-0" id="productModal1Label">حوكمة الشركات</h5>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="custom-txt3 mb-4" style="color: var(--color-text);">
+            في ظل بيئة الأعمال المعقدة والديناميكية اليوم، تُعد الحوكمة الفعّالة أساس النجاح الأمد. في بيت الخبراء الموحد، نقدم خدمات استشارية متخصصة في الحوكمة في الاختيارات الفريدة للعلاقات الفائلات والشركات.
+          </p>
+          <p class="custom-txt3 fw-bold color-primary mb-2">يحرص خبراؤنا على تكوين أُطر الحوكمة المعتمدة عالمياً، مع فهم فعلية، ومتابعتها ومواكبتها مع أنظمة الحوكمة الاستراتيجية. مما يُمكّنكم من مواجهة التحديات وتحسين الأداء وتحقيق النمو المستدام.</p>
+          <h6 class="fw-bold color-primary mt-4 mb-3">تشمل خدماتنا:</h6>
+          <ul class="modal-services-list">
+            <li><span class="modal-list-dot"></span>الاستعداد للطرح العام الأولي IPO<br><small>تجهيز شركتكم لطرح عام من خلال إنشاء هياكل حوكمة قوية، السياسات المالية، الشفافية والأمتثال.</small></li>
+            <li><span class="modal-list-dot"></span>إطار الحوكمة<br><small>تطوير سياسات وإجراءات تتماشى مع المنظمات الدولية وفصل الممارسات المالية.</small></li>
+            <li><span class="modal-list-dot"></span>تقييم مجلس الإدارة والتنفيذي الفصلي<br><small>إعداد تقييمات شاملة وخطط لتحسين لتشكيل أداء مجلس الإدارة وإدارتها وفاعلية القيادة الاستراتيجية.</small></li>
+            <li><span class="modal-list-dot"></span>تطوير تأهيل مجلس الإدارة والتوجيه<br><small>لصناعة مجالس إدارة ورش تدريبية وتطوير كفاءات وزيادة مهارات الأداء في أدوار الحوكمة.</small></li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-primary">طلب استشارة</a>
+          <button type="button" class="btn circle-btn button-light" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: حوكمة العائلة -->
+  <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon flex-shrink-0">
+              <img src="{% static 'imgs/specialization_icons/Asset-2.svg' %}" alt="" width="36" height="36">
+            </div>
+            <h5 class="modal-title color-primary fw-bold custom-title3 mb-0" id="productModal2Label">حوكمة العائلة (الثروة الخاصة)</h5>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="custom-txt3 mb-3" style="color: var(--color-text);">
+            برنامج استشاري استراتيجي متخصص في الشركات العائلية، يهدف إلى تعزيز الاستدامة في الشركات العائلية عبر تصميم وتنفيذ إطار الحوكمة العائلية متكامل.
+          </p>
+          <p class="custom-txt3 mb-4" style="color: var(--color-text);">
+            نعمل مع العائلات على بناء مواثيق عائلية، وتأسيس وتنظيم مجالس العائلة، وتطبيق الحوكمة الاستراتيجية. وتعزيز كل ذلك بتنظيم مناهج قوية، ومن خلال توفير الأدوات الفعّالة لإدارة الاستراتيجيات والاتفاق على العمل.
+          </p>
+          <p class="custom-txt3 fw-bold color-primary mb-3">هذه الخدمة تجمع بين الحوكمة الفاعلية، علم النفس الأسري والاستراتيجيات والاستشارات المالية للعائلات وتصوّن في الأدوار، المساعدة والاتفاق والأمين في النمو والاستمرارية في القيادة.</p>
+          <h6 class="fw-bold color-primary mt-4 mb-3">تشمل خدماتنا:</h6>
+          <ul class="modal-services-list">
+            <li><span class="modal-list-dot"></span>ميثاق العائلة<br><small>تحديد الأدوار، التوقعات وإطار التواصل لضمان الفائلة القيادة وإدارة الثروات بما يخدم الجيل.</small></li>
+            <li><span class="modal-list-dot"></span>إطار الحوكمة العائلية:<br><small>مجلس الملكية والثروة: تقديم الجمعية العائلية: تعزيز الهوية والرواثق والشفافية المالية.</small></li>
+            <li><span class="modal-list-dot"></span>خطة تعاقب قيادي<br><small>لضمان الأفراد المؤهلين الأمناء للقيادات المؤسسية سلاسة.</small></li>
+            <li><span class="modal-list-dot"></span>ورش عمل تفاعلية<br><small>مع المؤسسين، الأبناء، والأحفاد لتعزيز التوافق والاتصال.</small></li>
+            <li><span class="modal-list-dot"></span>خطة تنمية كاملة<br><small>وإشراف استشاري متكامل وشامل وتدريب مستمر.</small></li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-primary">طلب استشارة</a>
+          <button type="button" class="btn circle-btn button-light" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: تقييم مجلس الإدارة -->
+  <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon flex-shrink-0">
+              <img src="{% static 'imgs/specialization_icons/Asset-3.svg' %}" alt="" width="36" height="36">
+            </div>
+            <h5 class="modal-title color-primary fw-bold custom-title3 mb-0" id="productModal3Label">تقييم مجلس الإدارة</h5>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="custom-txt3 mb-3" style="color: var(--color-text);">
+            تقييم مجلس الإدارة هو خدمة استشارية متقدمة تهدف إلى تحسين فعالية وأداء مجلس الإدارة من خلال تقييم شامل ومتخصص لأداء المجلس وتحديد فرص التحسين الجماعي والفردي لأعضاء المجلس.
+          </p>
+          <p class="custom-txt3 mb-4" style="color: var(--color-text);">
+            نُقدم هذه الخدمة وفق منهجية متوافقة مع المعايير العالمية ونظم الحوكمة السعودية مثل هيئة السوق المالية (CMA) والبنك المركزي (SAMA). مما يُساعد المؤسسات على تعزيز الشفافية والمساءلة التنظيمية وصواياً.
+          </p>
+          <h6 class="fw-bold color-primary mt-4 mb-3">تشمل خدماتنا:</h6>
+          <ul class="modal-services-list">
+            <li><span class="modal-list-dot"></span>التوافق مع متطلبات هيئة السوق المالية (CMA) والبنك المركزي (SAMA)</li>
+            <li><span class="modal-list-dot"></span>تعزيز ثقة المساهمين وأصحاب العلاقة</li>
+            <li><span class="modal-list-dot"></span>رفع كفاءة اتخاذ القرار داخل المجلس</li>
+            <li><span class="modal-list-dot"></span>تحديد الفجوة والقرارات لتحسين أداء المجلس</li>
+            <li><span class="modal-list-dot"></span>دعم خطط النمو والقرارات في السياق المالية أو التوسع المؤسسي</li>
+            <li><span class="modal-list-dot"></span>تطوير الهيكلة والحوكمة وتعزيز الاستمرار النمو والاستمرار المؤسسي</li>
+            <li><span class="modal-list-dot"></span>خطة تقييم شامل لأداء المجلس لتحسين أعضاء المجلس فرداً وجماعياً</li>
+            <li><span class="modal-list-dot"></span>عرض تقديمي مخصص أمام أعضاء المجلس لمناقشة النتائج</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-primary">طلب استشارة</a>
+          <button type="button" class="btn circle-btn button-light" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: إستراتيجية رأس المال البشري -->
+  <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon flex-shrink-0">
+              <img src="{% static 'imgs/specialization_icons/Asset-4.svg' %}" alt="" width="36" height="36">
+            </div>
+            <h5 class="modal-title color-primary fw-bold custom-title3 mb-0" id="productModal4Label">إستراتيجية رأس المال البشري</h5>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="custom-txt3 mb-3" style="color: var(--color-text);">
+            الموهبة المناسبة في المكان الفارق. نساعدك على إيجاد الموارد البشرية التي تناسب احتياجات شركتك وتدعم نموك بكفاءة.
+          </p>
+          <p class="custom-txt3 mb-4" style="color: var(--color-text);">
+            نُحدث استراتيجية رأس المال البشري بصورة هيكل شاملة تغطي إدارة الموارد البشرية عبر مراحل الاستقطاب والتوظيف وتطوير المهارات والكفاءات، وإدارة الأداء والتعويضات والمزايا، وبناء ثقافة الشركة، وتحقيق التكامل المؤسسي والمؤسسي الاستدامة والتنافسية.
+          </p>
+          <h6 class="fw-bold color-primary mt-4 mb-3">تشمل خدماتنا:</h6>
+          <ul class="modal-services-list">
+            <li><span class="modal-list-dot"></span>تحديد الاحتياجات وتحليل الوظائف</li>
+            <li><span class="modal-list-dot"></span>البحث والترشيح عبر قنوات متعددة</li>
+            <li><span class="modal-list-dot"></span>إدارة المقابلات والتقييم والاختيار</li>
+            <li><span class="modal-list-dot"></span>الدعم في صياغة عروض العمل والتعاقد</li>
+          </ul>
+          <h6 class="fw-bold color-primary mt-4 mb-2">الهـــدف:</h6>
+          <p class="custom-txt3" style="color: var(--color-text);">تزويدك بفريق قوي يُسهم في تحقيق أهدافك بسرعة وفاعلية.</p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-primary">طلب استشارة</a>
+          <button type="button" class="btn circle-btn button-light" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: المدير المالي الخارجي -->
+  <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon flex-shrink-0">
+              <img src="{% static 'imgs/specialization_icons/Asset-5.svg' %}" alt="" width="36" height="36">
+            </div>
+            <h5 class="modal-title color-primary fw-bold custom-title3 mb-0" id="productModal5Label">المدير المالي الخارجي</h5>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="custom-txt3 mb-3" style="color: var(--color-text);">
+            خدمة مالية متخصصة تساعدك على ضبط الأداء المالي لمنشأتك وتحقيق الاستدامة المالية والنمو.
+          </p>
+          <p class="custom-txt3 mb-4" style="color: var(--color-text);">
+            المدير المالي الخارجي ليس مجرد مستشار مالي — إنه شريكك الاستراتيجي الذي يعمل معك بشكل وثيق لتحقيق أهداف شركتك. نقدم لك خبرة مدير مالي متكاملة دون الحاجة إلى توظيف دوام كامل. من خلال رؤية عميقة وتحليل دقيق للوضع المالي والفرص والمخاطر، نساعدك على اتخاذ قرارات مالية استراتيجية فعّالة.
+          </p>
+          <h6 class="fw-bold color-primary mt-4 mb-3">تشمل خدماتنا:</h6>
+          <ul class="modal-services-list">
+            <li><span class="modal-list-dot"></span>ضبط السياسات والرقابة المالية</li>
+            <li><span class="modal-list-dot"></span>إدارة التدفقات النقدية والسيولة</li>
+            <li><span class="modal-list-dot"></span>تصميم التقارير المالية اللازمة لدعم القرار</li>
+            <li><span class="modal-list-dot"></span>مراقبة التكاليف وتحسين الأصول الربحية</li>
+            <li><span class="modal-list-dot"></span>دعم التوسع والتمويل والامتثال</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-primary">طلب استشارة</a>
+          <button type="button" class="btn circle-btn button-light" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: دراسات الأعمال -->
+  <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon flex-shrink-0">
+              <img src="{% static 'imgs/specialization_icons/Asset-6.svg' %}" alt="" width="36" height="36">
+            </div>
+            <h5 class="modal-title color-primary fw-bold custom-title3 mb-0" id="productModal6Label">دراسات الأعمال</h5>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="custom-txt3 mb-3" style="color: var(--color-text);">
+            دراسات تحليلية احترافية لدعم قرارات الاستثمار والتوسع، مبنية على أرقام واقعية ومنهجيات متعددة.
+          </p>
+          <p class="custom-txt3 mb-4" style="color: var(--color-text);">
+            دراسات الأعمال تعمل على تزويدك بالصورة الكاملة قبل الإقدام على أي قرار تجاري أو استثماري، من خلال تحليل السوق والجدوى الاقتصادية، وتحويل البيانات إلى توصيات عملية، لدعم استثماراتك وتوسّعك على أسس واضحة ومدروسة.
+          </p>
+          <h6 class="fw-bold color-primary mt-4 mb-3">تشمل خدماتنا:</h6>
+          <ul class="modal-services-list">
+            <li><span class="modal-list-dot"></span>ضبط السياسات والرقابة المالية</li>
+            <li><span class="modal-list-dot"></span>إدارة التدفقات النقدية والسيولة</li>
+            <li><span class="modal-list-dot"></span>تصميم التقارير المالية اللازمة لدعم القرار</li>
+            <li><span class="modal-list-dot"></span>مراقبة التكاليف وتحسين الأصول الربحية</li>
+            <li><span class="modal-list-dot"></span>دعم التوسع والتمويل والامتثال</li>
+          </ul>
+          <p class="custom-txt3 mt-3" style="color: var(--color-text);">دراسات الأعمال هي الوصلة التي تُوجّه قراراتك الاستثمارية من الفكرة إلى النجاح بثقة ووضوح.</p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-primary">طلب استشارة</a>
+          <button type="button" class="btn circle-btn button-light" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: المنشآت الصغيرة والمتوسطة -->
+  <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content products-modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="products-modal-icon flex-shrink-0">
+              <img src="{% static 'imgs/specialization_icons/Asset-7.svg' %}" alt="" width="36" height="36">
+            </div>
+            <h5 class="modal-title color-primary fw-bold custom-title3 mb-0" id="productModal7Label">المنتجات الاستشارية للمنشآت الصغيرة والمتوسطة</h5>
+          </div>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3 mb-4">
+            <div class="col-12 col-md-6">
+              <div class="modal-info-box">
+                نقدّم حلولاً استشارية متكاملة تبدأ من بناء الهوية المؤسسية وصناعة المحتوى، مروراً باستقطاب المواهب وتفعيل الحضور الرقمي، وصولاً إلى تقييم الحوكمة وأداء مجالس الإدارة وفق أفضل الممارسات.
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="modal-info-box">
+                نساعد المنشآت على فهم واقعها الحالي، تحديد فجواتها، ووضع خطط تطوير عملية قابلة للتنفيذ والقياس، بما يدعم اتخاذ القرار ويعزز الاستدامة والنمو بثقة.
+              </div>
+            </div>
+          </div>
+          <h6 class="fw-bold color-primary mb-3">تشمل خدماتنا:</h6>
+          <ul class="modal-services-list">
+            <li>
+              <span class="modal-list-dot"></span>
+              <div><strong>كتابة المحتوى:</strong><br><small>محتوى احترافي يعكس هوية منشأتك ويضع انطباعاً أولياً مؤثراً.</small></div>
+            </li>
+            <li>
+              <span class="modal-list-dot"></span>
+              <div><strong>استقطاب المواهب:</strong><br><small>اختيار الكفاءات المناسبة لبناء فريق يدعم النمو ويحقق الأهداف.</small></div>
+            </li>
+            <li>
+              <span class="modal-list-dot"></span>
+              <div><strong>تقييم وتفعيل منصات التواصل الاجتماعي:</strong><br><small>تحويل حضورك الرقمي إلى تأثير فعلي يعزز علامتك التجارية.</small></div>
+            </li>
+            <li>
+              <span class="modal-list-dot"></span>
+              <div><strong>تقييم مجلس الإدارة:</strong><br><small>قياس أداء المجلس وفق أفضل ممارسات الحوكمة لتعزيز فعالية القرار.</small></div>
+            </li>
+            <li>
+              <span class="modal-list-dot"></span>
+              <div><strong>البوصلة المؤسسية:</strong><br><small>رؤية واضحة وخطة تطوير عملية تقود منشأتك نحو نمو مستدام.</small></div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="{% url 'consultation_request' %}" class="btn circle-btn button-primary">طلب استشارة</a>
+          <button type="button" class="btn circle-btn button-light" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /Per-Product Modals -->
+
+  <!-- <section class="works">
     <div class="container">
       <h3 class="fs-bold h3 mb-0 text-uppercase text-center text-white custom-title" data-aos="fade-down">التخصصات</h3>
       <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 justify-content-between mt-4">
@@ -244,7 +649,8 @@
       <div class="exp-btn text-center pt-4"><a class="works-btn btn circle-btn button-light"
           href="{% url 'services' %}">مشاهدة المزيد</a></div>
     </div>
-  </section>
+  </section> -->
+
   <section class="how-work">
     <div class="container">
       <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none"
